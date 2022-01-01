@@ -9,28 +9,8 @@
   },
   "layers": [
     {
-      "name": "AcousticLayer",
-      "file": "Resources/acoustic.csv"
-    },
-    {
-      "name": "HapticLayer",
-      "file": "Resources/haptic.csv"
-    },
-    {
-      "name": "HumanGridLayer",
-      "file": "Resources/humangrid.csv"
-    },
-    {
-      "name": "OlfactoryLayer",
-      "file": "Resources/olfactory.csv"
-    },
-    {
-      "name": "TasteLayer",
-      "file": "Resources/taste.csv"
-    },
-    {
-      "name": "VisualLayer",
-      "file": "Resources/visual.csv"
+      "name": "RecipeGridLayer",
+      "file": "Resources/ingredientsgrid.csv"
     }
   ],
   "agents": [

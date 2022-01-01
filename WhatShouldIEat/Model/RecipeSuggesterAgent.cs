@@ -7,9 +7,9 @@ namespace WhatShouldIEat.Model
     ///  A simple agent stub that has an Init() method for initialization and a
     ///  Tick() method for acting in every tick of the simulation.
     /// </summary>
-    public class HumanAgent : IAgent<HumanGridLayer>
+    public class RecipeSuggesterAgent : IAgent<RecipeGridLayer>
     {
-        public void Init(HumanGridLayer layer)
+        public void Init(RecipeGridLayer layer)
         {
             Layer = layer; // store layer for access within agent class
         }
@@ -24,7 +24,7 @@ namespace WhatShouldIEat.Model
             smell();
         }
 
-        private HumanGridLayer Layer { get; set; } // provides access to the main layer of this agent
+        private RecipeGridLayer Layer { get; set; } // provides access to the main layer of this agent
         
         private void see(){}
         private void hear(){}
