@@ -1,0 +1,42 @@
+{
+  "globals": {
+    "steps": 10,
+    "output": "csv",
+    "options": {
+      "delimiter": ";",
+      "format": "en-EN"
+    }
+  },
+  "layers": [
+    {
+      "name": "AcousticLayer",
+      "file": "Resources/acoustic.csv"
+    },
+    {
+      "name": "HapticLayer",
+      "file": "Resources/haptic.csv"
+    },
+    {
+      "name": "HumanGridLayer",
+      "file": "Resources/humangrid.csv"
+    },
+    {
+      "name": "OlfactoryLayer",
+      "file": "Resources/olfactory.csv"
+    },
+    {
+      "name": "TasteLayer",
+      "file": "Resources/taste.csv"
+    },
+    {
+      "name": "VisualLayer",
+      "file": "Resources/visual.csv"
+    }
+  ],
+  "agents": [
+    {
+      "name": "HumanAgent",
+      "count": 1
+    }
+  ]
+}
