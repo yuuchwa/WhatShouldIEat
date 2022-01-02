@@ -212,3 +212,7 @@ E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\obj\Debug\net5.0\WhatShouldIEat.pdb
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\obj\Debug\net5.0\WhatShouldIEat.genruntimeconfig.cache
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\Resources\ingredientsgrid.csv
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\Reddit.NET.dll
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\RestSharp.dll
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\AuthTokenRetrieverLib.dll
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\uhttpsharp.dll

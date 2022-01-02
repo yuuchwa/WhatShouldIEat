@@ -3,6 +3,7 @@ using System.IO;
 using WhatShouldIEat.Model;
 using Mars.Components.Starter;
 using Mars.Interfaces.Model;
+using WhatShouldIEat.Services;
 
 namespace WhatShouldIEat
 {
@@ -25,9 +26,11 @@ namespace WhatShouldIEat
             
             // Create simulation task accordingly
             var task = SimulationStarter.Start(description, config);
-            
+
             // Run simulation
             var loopResults = task.Run();
+
+
             
             // Feedback to user that simulation run was successful
             Console.WriteLine($"Simulation execution finished after {loopResults.Iterations} steps");

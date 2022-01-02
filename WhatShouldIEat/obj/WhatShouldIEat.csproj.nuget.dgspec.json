@@ -47,6 +47,14 @@
             "Microsoft.NETCore.Platforms": {
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Reddit": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Reddit.AuthTokenRetrieverLib": {
+              "target": "Package",
+              "version": "[1.5.1, )"
             }
           },
           "imports": [

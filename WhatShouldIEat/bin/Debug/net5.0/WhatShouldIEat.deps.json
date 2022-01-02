@@ -9,7 +9,9 @@
       "WhatShouldIEat/1.0.0": {
         "dependencies": {
           "Mars.Life.Simulations": "4.2.0",
-          "Microsoft.NETCore.Platforms": "5.0.3"
+          "Microsoft.NETCore.Platforms": "5.0.3",
+          "Reddit": "1.5.0",
+          "Reddit.AuthTokenRetrieverLib": "1.5.1"
         },
         "runtime": {
           "WhatShouldIEat.dll": {}
@@ -579,6 +581,40 @@
           "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "2.2.0.45337"
+          }
+        }
+      },
+      "Reddit/1.5.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "12.0.3",
+          "RestSharp": "106.6.9"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reddit.NET.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        }
+      },
+      "Reddit.AuthTokenRetrieverLib/1.5.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "RestSharp": "106.6.9",
+          "uhttpsharp.Standard": "8.0.30703.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AuthTokenRetrieverLib.dll": {
+            "assemblyVersion": "1.5.1.0",
+            "fileVersion": "1.5.1.0"
+          }
+        }
+      },
+      "RestSharp/106.6.9": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.6.9.0",
+            "fileVersion": "106.6.9.0"
           }
         }
       },
@@ -1623,6 +1659,18 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "uhttpsharp.Standard/8.0.30703.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/uhttpsharp.dll": {
+            "assemblyVersion": "8.0.30703.1",
+            "fileVersion": "8.0.30703.1"
+          }
+        }
+      },
       "WebSocketSharp-netstandard/1.0.1": {
         "runtime": {
           "lib/netstandard2.0/websocket-sharp.dll": {
@@ -1911,6 +1959,27 @@
       "sha512": "sha512-7hzHplEIVOGBl5zOQZGX/DiJDHjq+RVRVrYgDiqXb6RriqWAdacXxp+XO9WSrATCEXyNOUOQg9aqQArsjase/A==",
       "path": "pipelines.sockets.unofficial/2.2.0",
       "hashPath": "pipelines.sockets.unofficial.2.2.0.nupkg.sha512"
+    },
+    "Reddit/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Z5vx6As9AIuiorpPsF7TXdnofoiTlNeDNdUCZAVTpyW6o1ff/4l5PhyOMw397CmkF+jg6ixlGvw8ZYZ2b7C3w==",
+      "path": "reddit/1.5.0",
+      "hashPath": "reddit.1.5.0.nupkg.sha512"
+    },
+    "Reddit.AuthTokenRetrieverLib/1.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xcDwFV+vRvbAXHfYMsAmOMzTfm5jgSX433fq7LeWAnsv+1WoLznAWveA58Mg5QKHwk+2K3OFd1py1J7uffAKsw==",
+      "path": "reddit.authtokenretrieverlib/1.5.1",
+      "hashPath": "reddit.authtokenretrieverlib.1.5.1.nupkg.sha512"
+    },
+    "RestSharp/106.6.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/IAQTwlnlQcjlIyvelf+rhQcCRPy/r/0MftpNbff/D7PZVnmVXE4AnHk/F4NJJJEZbI4M+QTglB+xFkAyzr+9A==",
+      "path": "restsharp/106.6.9",
+      "hashPath": "restsharp.106.6.9.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -2702,6 +2771,13 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "uhttpsharp.Standard/8.0.30703.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-37cm93avVmnSH8n8W2YzXyhS0U4rfyAwTvwxSEeWp+uvsdegfCpK8gf7apENUymCgNnBbrYPRNsww84pM2dWKw==",
+      "path": "uhttpsharp.standard/8.0.30703.1",
+      "hashPath": "uhttpsharp.standard.8.0.30703.1.nupkg.sha512"
     },
     "WebSocketSharp-netstandard/1.0.1": {
       "type": "package",

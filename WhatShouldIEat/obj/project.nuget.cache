@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LkHJaaKlWk9DxKLvAt5jwqh973GZhWHpbQSMQCgXOH3HYTMG1aT+3LE4SxkMnCjx7DEoFq8TEeqWqSaZhmvy/Q==",
+  "dgSpecHash": "Kiwk0awvEH2mlfYjsBmVj5MMCINHKTjckKv6V1JhvWC5dpVpRxyIAKByv+2/1zBFQUrTPfwHneno418FqeEk4A==",
   "success": true,
   "projectFilePath": "E:\\Studium\\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\\MyPDT\\WhatShouldIEat\\WhatShouldIEat\\WhatShouldIEat.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,9 @@
     "C:\\Users\\leon-\\.nuget\\packages\\npgsql\\5.0.1.1\\npgsql.5.0.1.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\nuget.commandline\\3.5.0\\nuget.commandline.3.5.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "C:\\Users\\leon-\\.nuget\\packages\\reddit\\1.5.0\\reddit.1.5.0.nupkg.sha512",
+    "C:\\Users\\leon-\\.nuget\\packages\\reddit.authtokenretrieverlib\\1.5.1\\reddit.authtokenretrieverlib.1.5.1.nupkg.sha512",
+    "C:\\Users\\leon-\\.nuget\\packages\\restsharp\\106.6.9\\restsharp.106.6.9.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -156,6 +159,7 @@
     "C:\\Users\\leon-\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\leon-\\.nuget\\packages\\uhttpsharp.standard\\8.0.30703.1\\uhttpsharp.standard.8.0.30703.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\websocketsharp-netstandard\\1.0.1\\websocketsharp-netstandard.1.0.1.nupkg.sha512"
   ],
   "logs": []

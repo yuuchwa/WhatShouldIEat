@@ -657,6 +657,43 @@
           "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {}
         }
       },
+      "Reddit/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "11.0.2",
+          "RestSharp": "106.6.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Reddit.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reddit.NET.dll": {}
+        }
+      },
+      "Reddit.AuthTokenRetrieverLib/1.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "RestSharp": "106.6.9",
+          "uhttpsharp.Standard": "8.0.30703.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/AuthTokenRetrieverLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AuthTokenRetrieverLib.dll": {}
+        }
+      },
+      "RestSharp/106.6.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -2477,6 +2514,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "uhttpsharp.Standard/8.0.30703.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/uhttpsharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/uhttpsharp.dll": {}
+        }
+      },
       "WebSocketSharp-netstandard/1.0.1": {
         "type": "package",
         "compile": {
@@ -4001,6 +4051,46 @@
         "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
         "pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
         "pipelines.sockets.unofficial.nuspec"
+      ]
+    },
+    "Reddit/1.5.0": {
+      "sha512": "/Z5vx6As9AIuiorpPsF7TXdnofoiTlNeDNdUCZAVTpyW6o1ff/4l5PhyOMw397CmkF+jg6ixlGvw8ZYZ2b7C3w==",
+      "type": "package",
+      "path": "reddit/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Reddit.NET.dll",
+        "lib/netstandard2.0/Reddit.NET.xml",
+        "reddit.1.5.0.nupkg.sha512",
+        "reddit.nuspec"
+      ]
+    },
+    "Reddit.AuthTokenRetrieverLib/1.5.1": {
+      "sha512": "xcDwFV+vRvbAXHfYMsAmOMzTfm5jgSX433fq7LeWAnsv+1WoLznAWveA58Mg5QKHwk+2K3OFd1py1J7uffAKsw==",
+      "type": "package",
+      "path": "reddit.authtokenretrieverlib/1.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/AuthTokenRetrieverLib.dll",
+        "reddit.authtokenretrieverlib.1.5.1.nupkg.sha512",
+        "reddit.authtokenretrieverlib.nuspec"
+      ]
+    },
+    "RestSharp/106.6.9": {
+      "sha512": "/IAQTwlnlQcjlIyvelf+rhQcCRPy/r/0MftpNbff/D7PZVnmVXE4AnHk/F4NJJJEZbI4M+QTglB+xFkAyzr+9A==",
+      "type": "package",
+      "path": "restsharp/106.6.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.6.9.nupkg.sha512",
+        "restsharp.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8887,6 +8977,19 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "uhttpsharp.Standard/8.0.30703.1": {
+      "sha512": "37cm93avVmnSH8n8W2YzXyhS0U4rfyAwTvwxSEeWp+uvsdegfCpK8gf7apENUymCgNnBbrYPRNsww84pM2dWKw==",
+      "type": "package",
+      "path": "uhttpsharp.standard/8.0.30703.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.0/uhttpsharp.dll",
+        "uhttpsharp.standard.8.0.30703.1.nupkg.sha512",
+        "uhttpsharp.standard.nuspec"
+      ]
+    },
     "WebSocketSharp-netstandard/1.0.1": {
       "sha512": "knoinAv31vbdxXdypnzN2MPX5hyntVLWceq6OdWRXkr9zzqp/RWbxSuLFGbkW8De1061URgNAN43BUTlgMx1CA==",
       "type": "package",
@@ -8908,7 +9011,9 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Mars.Life.Simulations >= 4.2.0",
-      "Microsoft.NETCore.Platforms >= 5.0.3"
+      "Microsoft.NETCore.Platforms >= 5.0.3",
+      "Reddit >= 1.5.0",
+      "Reddit.AuthTokenRetrieverLib >= 1.5.1"
     ]
   },
   "packageFolders": {
@@ -8957,6 +9062,14 @@
           "Microsoft.NETCore.Platforms": {
             "target": "Package",
             "version": "[5.0.3, )"
+          },
+          "Reddit": {
+            "target": "Package",
+            "version": "[1.5.0, )"
+          },
+          "Reddit.AuthTokenRetrieverLib": {
+            "target": "Package",
+            "version": "[1.5.1, )"
           }
         },
         "imports": [
