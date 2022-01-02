@@ -1,0 +1,22 @@
+{
+  "globals": {
+    "steps": 1,
+    "output": "csv",
+    "options": {
+      "delimiter": ";",
+      "format": "en-EN"
+    }
+  },
+  "layers": [
+    {
+      "name": "RecipeGridLayer",
+      "file": "Resources/ingredientsgrid.csv"
+    }
+  ],
+  "agents": [
+    {
+      "name": "RecipeSuggesterAgent",
+      "count": 1
+    }
+  ]
+}
