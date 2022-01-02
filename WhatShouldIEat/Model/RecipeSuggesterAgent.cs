@@ -22,6 +22,7 @@ namespace WhatShouldIEat.Model
         {
             //do something useful in every tick of the simulation
             fetchRedditPost();
+
         }
 
         private RecipeGridLayer Layer { get; set; } // provides access to the main layer of this agent
