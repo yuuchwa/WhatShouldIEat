@@ -30,8 +30,8 @@ namespace WhatShouldIEat
             // Run simulation
             var loopResults = task.Run();
 
-
-            
+            Console.WriteLine("Enter any key to terminate the program.");
+            Console.ReadLine();
             // Feedback to user that simulation run was successful
             Console.WriteLine($"Simulation execution finished after {loopResults.Iterations} steps");
         }

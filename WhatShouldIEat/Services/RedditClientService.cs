@@ -7,13 +7,19 @@ using System.Threading.Tasks;
 using Reddit;
 using Reddit.AuthTokenRetriever;
 using System.Diagnostics;
+using Reddit.Controllers;
+using Reddit.Inputs.Search;
 
 namespace WhatShouldIEat.Services
 {
     class RedditClientService : IRedditClientService
     {
-        private string appID = "rHZR-6M5K77TtoVPExKRPg";
-        private string secret_key = "-NN2aCOYBsxsgOOf-UA5CbOWh_8Zpw";
+        private string APP_ID = "rswOv1IFQZ2hpKHOf5smog";
+        private string SECRET_ID = "hqpiozsX9BdLT45Jd2l6S6t7cBiAoA";
+        private static string FIREFOX_BROWSER_PATH = @"C:\Program Files\Mozilla Firefox\firefox.exe";
+        private static string CHROME_BROWSER_PATH = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+
+        // 
 
         public RedditClientService()
         {
@@ -33,15 +39,19 @@ namespace WhatShouldIEat.Services
 
         private void RetrievAccessToken()
         {
-            var token = AuthorizeUser(appID);
-            var reddit = new RedditClient(appID, token);
+            var authTokenRetrieverLib = AuthorizeUser(APP_ID, SECRET_ID);
+            Console.ReadLine();
+            var reddit = new RedditClient(APP_ID, authTokenRetrieverLib.RefreshToken, SECRET_ID, authTokenRetrieverLib.AccessToken);
 
             // Display the name and cake day of the authenticated user.
-            Console.WriteLine("Username: " + reddit.Account.Me.Name);
-            Console.WriteLine("Cake Day: " + reddit.Account.Me.Created.ToString("D"));
+            var input = new SearchGetSearchInput("Foot");
+            List<Post> posts = reddit.Subreddit("AskReddit").Search(input);  // Search r/MySub
+            if (posts.Count == 0)
+            {
+                posts = reddit.Subreddit("all").Search(new SearchGetSearchInput("Bernie Sanders"));  // Search r/all
+            }
 
-            var askReddit = reddit.Subreddit("AskReddit").About();
-            Console.WriteLine(askReddit.Posts.Top[0]);
+            Console.WriteLine("Post: " + posts[0]);
         }
 
         public void InitRedditClient()
@@ -49,8 +59,7 @@ namespace WhatShouldIEat.Services
 
         }
 
-
-        public static string AuthorizeUser(string appId, string appSecret = null, int port = 8080)
+        public AuthTokenRetrieverLib AuthorizeUser(string appId, string appSecret = null, int port = 8080)
         {
             // Create a new instance of the auth token retrieval library.  --Kris
             AuthTokenRetrieverLib authTokenRetrieverLib = new AuthTokenRetrieverLib(appId, appSecret, port);
@@ -62,16 +71,12 @@ namespace WhatShouldIEat.Services
             // Open the browser to the Reddit authentication page.  Once the user clicks "accept", Reddit will redirect the browser to localhost:8080, where AwaitCallback will take over.  --Kris
             OpenBrowser(authTokenRetrieverLib.AuthURL());
 
-            // Replace this with whatever you want the app to do while it waits for the user to load the auth page and click Accept.  --Kris
-            while (true) { }
-
             // Cleanup.  --Kris
             authTokenRetrieverLib.StopListening();
-
-            return authTokenRetrieverLib.RefreshToken;
+            return authTokenRetrieverLib;
         }
 
-        public static void OpenBrowser(string authUrl, string browserPath = @"C:\Program Files\Mozilla Firefox\firefox")
+        public static void OpenBrowser(string authUrl = "about:blank")
         {
             try
             {
@@ -81,7 +86,7 @@ namespace WhatShouldIEat.Services
             catch (System.ComponentModel.Win32Exception)
             {
                 // This typically occurs if the runtime doesn't know where your browser is.  Use BrowserPath for when this happens.  --Kris
-                ProcessStartInfo processStartInfo = new ProcessStartInfo(browserPath)
+                ProcessStartInfo processStartInfo = new ProcessStartInfo(FIREFOX_BROWSER_PATH)
                 {
                     Arguments = authUrl
                 };
