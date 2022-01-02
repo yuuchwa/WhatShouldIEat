@@ -21,16 +21,10 @@ namespace WhatShouldIEat.Model
         public void Tick()
         {
             //do something useful in every tick of the simulation
-            fetchRedditPost();
-
+            redditClient.RequestRecepies(null);
         }
 
         private RecipeGridLayer Layer { get; set; } // provides access to the main layer of this agent
-
-        private void fetchRedditPost()
-        {
-
-        }
         
         public Guid ID { get; set; } // identifies the agent
         

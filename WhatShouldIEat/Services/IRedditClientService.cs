@@ -11,8 +11,8 @@ namespace WhatShouldIEat.Services
 {
     interface IRedditClientService
     {
-        public void RequestRecepies();
+        public void RequestRecepies(List<string> ingredieces);
 
-        public void RequestRecepiesByCountry();
+        public void RequestRecepiesByCountry(List<string> ingredieces, string nationality);
     }
 }
