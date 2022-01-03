@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 /* Reddit Client API */
 using Reddit;
+using WhatShouldIEat.Model;
 
 namespace WhatShouldIEat.Services
 {

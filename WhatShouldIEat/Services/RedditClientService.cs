@@ -30,14 +30,19 @@ namespace WhatShouldIEat.Services
 
         public void RequestRecepies(Recipe recipe)
         {
-            var input = new SearchGetSearchInput("Tomato");
-            List<Post> posts = reddit.Subreddit("AskReddit").Search(input);  // Search r/MySub
+            string ingredientsString = "";
+            foreach (string ingredient in recipe.Ingredients)
+            {
+                ingredientsString += ingredient + " ";
+            }
+            var searchInput = new SearchGetSearchInput(ingredientsString);
+            List<Post> posts = reddit.Subreddit("Cooking").Search(searchInput);  // Search r/MySub
             if (posts.Count == 0)
             {
-                posts = reddit.Subreddit("all").Search(new SearchGetSearchInput("Bernie Sanders"));  // Search r/all
+                posts = reddit.Subreddit("all").Search(searchInput);  // Search r/all
             }
 
-            Console.WriteLine("Post: " + posts[0]);
+            Console.WriteLine("Post: " + posts[0].Title);
         }
 
         public void RequestRecepiesByCountry(List<string> ingredieces, string nationality)
