@@ -19,7 +19,7 @@ namespace WhatShouldIEat.Model
             // the agent manager can create agents and initializes them as defined in the sim config
             var agentManager = layerInitData.Container.Resolve<IAgentManager>();
             var agents = agentManager.Spawn<RecipeSuggesterAgent, RecipeGridLayer>().ToList();
-            Console.WriteLine($"We created {agents.Count} agents.");
+            //Console.WriteLine($"We created {agents.Count} agents.");
             
             return true;
         }

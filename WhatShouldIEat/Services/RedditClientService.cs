@@ -10,6 +10,7 @@ using System.Diagnostics;
 using Reddit.Controllers;
 using Reddit.Inputs.Search;
 using System.IO;
+using WhatShouldIEat.Model;
 
 namespace WhatShouldIEat.Services
 {
@@ -27,7 +28,7 @@ namespace WhatShouldIEat.Services
             RetrievAccessToken();
         }
 
-        public void RequestRecepies(List<string> ingredieces)
+        public void RequestRecepies(Recipe recipe)
         {
             var input = new SearchGetSearchInput("Tomato");
             List<Post> posts = reddit.Subreddit("AskReddit").Search(input);  // Search r/MySub
