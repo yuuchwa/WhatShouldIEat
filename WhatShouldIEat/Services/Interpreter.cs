@@ -23,7 +23,6 @@ namespace WhatShouldIEat.Services
             //Console.WriteLine("Was möchtest du heute ausprobieren.");
             while (true)
             {
-                string responseText = "";
                 int option = 0;
 
                 Console.WriteLine("Wonach möchtest du heute suchen?");
@@ -31,6 +30,7 @@ namespace WhatShouldIEat.Services
                 Console.WriteLine("2) Ein Rezept für ein bestimmtes Gericht?");
                 if (int.TryParse(Console.ReadLine(), out option))
                 {
+                    string responseText = "";
                     if (option == 1)
                     {
                         Console.WriteLine("Welche Zutaten sollen im Gericht enthalten sein?");
@@ -54,9 +54,10 @@ namespace WhatShouldIEat.Services
                 {
                     Console.WriteLine("Das ist keine gültige Eingabe. Versuche es nochmal.");
                 }
+            }
+               
 
-                Console.WriteLine("Soll das Gericht in unter 15 Minuten gekocht sein? j/n");
-
+/*                 Console.WriteLine("Soll das Gericht in unter 15 Minuten gekocht sein? j/n");
                 while(true)
                 {
                     responseText = Console.ReadLine();
@@ -70,8 +71,7 @@ namespace WhatShouldIEat.Services
                         break;
                     }
                     Console.WriteLine("Das ist keine gültige Eingabe. Versuche es nochmal.");
-                }
-            }
+                } */
 
             return recipe; 
         }

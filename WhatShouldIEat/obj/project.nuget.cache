@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Kiwk0awvEH2mlfYjsBmVj5MMCINHKTjckKv6V1JhvWC5dpVpRxyIAKByv+2/1zBFQUrTPfwHneno418FqeEk4A==",
+  "dgSpecHash": "CUlsM5qIUvPt38SWQvaQOv2SRExkn/rsER3A1hDQYhJTtSoKRIEP8cRNIMGCnuNu3to4bhfEZHu/L0OygUrdiQ==",
   "success": true,
   "projectFilePath": "E:\\Studium\\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\\MyPDT\\WhatShouldIEat\\WhatShouldIEat\\WhatShouldIEat.csproj",
   "expectedPackageFiles": [
@@ -39,7 +39,7 @@
     "C:\\Users\\leon-\\.nuget\\packages\\nettopologysuite.io.geojson\\2.0.4\\nettopologysuite.io.geojson.2.0.4.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\nettopologysuite.io.geopackage\\2.0.0\\nettopologysuite.io.geopackage.2.0.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\nettopologysuite.io.shapefile\\2.0.0\\nettopologysuite.io.shapefile.2.0.0.nupkg.sha512",
-    "C:\\Users\\leon-\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\leon-\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\npgsql\\5.0.1.1\\npgsql.5.0.1.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\nuget.commandline\\3.5.0\\nuget.commandline.3.5.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",

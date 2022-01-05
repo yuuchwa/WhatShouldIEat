@@ -21,6 +21,8 @@ namespace WhatShouldIEat.Model
 
         public string duration { get; set; } // in Minutes
 
-        public Post post { get; set; }
+        public Post postURA { get; set; }
+
+        public string instruction { get; set; }
     }
 }

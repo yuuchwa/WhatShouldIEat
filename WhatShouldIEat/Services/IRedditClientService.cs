@@ -14,6 +14,6 @@ namespace WhatShouldIEat.Services
     {
         public void RequestRecepies(Recipe recipe);
 
-        public void RequestRecepiesByCountry(List<string> ingredieces, string nationality);
+        //public void RequestRecepiesByCountry(List<string> ingredieces, string nationality);
     }
 }

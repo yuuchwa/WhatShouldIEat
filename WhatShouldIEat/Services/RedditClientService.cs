@@ -12,6 +12,7 @@ using Reddit.Inputs.Search;
 using System.IO;
 using WhatShouldIEat.Model;
 
+
 namespace WhatShouldIEat.Services
 {
     class RedditClientService : IRedditClientService
@@ -31,23 +32,88 @@ namespace WhatShouldIEat.Services
         public void RequestRecepies(Recipe recipe)
         {
             string ingredientsString = "";
-            foreach (string ingredient in recipe.Ingredients)
+            string subredditName = "recipes";
+            SearchGetSearchInput searchInput;
+
+            if (recipe.Ingredients != null)
             {
-                ingredientsString += ingredient + " ";
+                foreach (string ingredient in recipe.Ingredients)
+                {
+                    ingredientsString += ingredient + " ";
+                }
+                searchInput = new SearchGetSearchInput(ingredientsString);
             }
-            var searchInput = new SearchGetSearchInput(ingredientsString);
-            List<Post> posts = reddit.Subreddit("Cooking").Search(searchInput);  // Search r/MySub
+            else
+            {
+                searchInput = new SearchGetSearchInput(recipe.Dish);
+            }
+
+            List<Post> posts = reddit.Subreddit(subredditName).Search(searchInput);  // Search r/MySub
+
+            // Backup search, if no recipe could be found in the selected subreddit
             if (posts.Count == 0)
             {
                 posts = reddit.Subreddit("all").Search(searchInput);  // Search r/all
             }
 
-            Console.WriteLine("Post: " + posts[0].Title);
+            string title = posts[0].Title;
+            string instruction = FindInstructionForRecipe(posts[0]);
+            //string instruction = getPosOfWord(temp, "instructions");
         }
 
-        public void RequestRecepiesByCountry(List<string> ingredieces, string nationality)
+        private string FindInstructionForRecipe(Post post)
         {
-            
+            string originalPoster = post.Author;
+            List<Comment> postComments = post.Comments.GetComments();
+            List<Comment> commentsFormOp = FindCommentsFromOP(originalPoster, postComments);
+            string instruction = "";
+
+            if(commentsFormOp.Count > 0)
+            {
+                foreach(Comment comment in commentsFormOp)
+                {
+                    int index = getPosOfWord(comment.Body.ToLower(), "ingredients");
+
+                    if (index >= 0)
+                    {
+                        instruction = comment.Body.Substring(index);
+                        while (instruction[0] != '1')
+                        {
+                            instruction = instruction.Substring(1);
+                            // entferne überschüssigen Code.
+                        }
+                    }
+                    Console.WriteLine(instruction);
+                }
+            }
+
+            return instruction;
+        }
+
+        /*
+         * Sucht der Position eines bestimmten Wortes in einem String.
+         */
+        private int getPosOfWord(string strSource, string strStart)
+        {
+            if (strSource.Contains(strStart))
+            {
+                return strSource.IndexOf(strStart, 0) + strStart.Length;
+            }
+
+            return -1;
+        }
+
+        private List<Comment> FindCommentsFromOP(string originalPoster, List<Comment> comments)
+        {
+            List<Comment> commentsFromOp = new List<Comment>();
+            foreach(Comment comment in comments)
+            {
+                if(String.Compare(originalPoster, comment.Author) == 0)
+                {
+                    commentsFromOp.Add(comment);
+                }
+            }
+            return commentsFromOp;
         }
 
         private void RetrievAccessToken()
