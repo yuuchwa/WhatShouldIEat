@@ -9,7 +9,6 @@ namespace WhatShouldIEat.Services
 {
     class Interpreter
     {
-        private int MAX_ATTEMPTS = 5;
 
         public Interpreter()
         {
@@ -35,13 +34,22 @@ namespace WhatShouldIEat.Services
                     {
                         Console.WriteLine("Welche Zutaten sollen im Gericht enthalten sein?");
                         responseText = Console.ReadLine();
-                        recipe.Ingredients = responseText.Split(", ").ToList();
+                        if (String.IsNullOrEmpty(responseText))
+                        {
+                            continue;
+                        }
+                        recipe.Ingredients = responseText.ToLower().Split(", ").ToList();
                         break;
                     }
                     else if (option == 2)
                     {
                         Console.WriteLine("Welches Gericht möchtest du kochen?");
                         responseText = Console.ReadLine();
+
+                        if (String.IsNullOrEmpty(responseText))
+                        {
+                            continue;
+                        }
                         recipe.Dish = responseText;
                         break;
                     }
@@ -55,42 +63,20 @@ namespace WhatShouldIEat.Services
                     Console.WriteLine("Das ist keine gültige Eingabe. Versuche es nochmal.");
                 }
             }
-               
-
-/*                 Console.WriteLine("Soll das Gericht in unter 15 Minuten gekocht sein? j/n");
-                while(true)
-                {
-                    responseText = Console.ReadLine();
-                    if (String.Equals(responseText, "j")) {
-                        recipe.duration = "fast";
-                        break;
-                    }
-                    else if (String.Equals(responseText, "n"))
-                    {
-                        recipe.duration = "slow";
-                        break;
-                    }
-                    Console.WriteLine("Das ist keine gültige Eingabe. Versuche es nochmal.");
-                } */
-
             return recipe; 
         }
 
-        /*
-        private List<string> filterIngredientsFromResponse(string response)
+        public void PrintRecipe(Recipe recipe)
         {
-            // TODO: Check if evey string is actually an ingredient.
-            List<string> ingredients = response.Split(',').ToList(); ;
-            response = cleanString(response);
-            return ingredients;
+            Console.WriteLine("\nTitle: " + recipe.Title);
+            Console.WriteLine("Author: " + recipe.Author);
+            Console.WriteLine("Ingredients: \n");
+            foreach(string ingredient in recipe.Ingredients)
+            {
+                Console.WriteLine("- " + ingredient);
+            }
+            Console.WriteLine("\nInstruction\n");
+            Console.WriteLine(recipe.Instruction);
         }
-
-        private string cleanString(string str)
-        {
-            string cleanedString = str.Replace(", ", "").Replace("; ", "");
-
-            return cleanedString;
-        }
-        */
     }
 }

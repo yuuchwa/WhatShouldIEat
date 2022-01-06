@@ -11,18 +11,25 @@ namespace WhatShouldIEat.Model
 {
     class Recipe
     {
-        public string Meal { get; set; }
+        public string Title { get; set; }
 
         public List<string> Ingredients { get; set; }
 
+        public string Author { get; set; }
+
         public string Dish { get; set; }
 
-        public string Nationality { get; set; }
+        public string Duration { get; set; } // in Minutes
+ 
+        public string Instruction { get; set; }
 
-        public string duration { get; set; } // in Minutes
+        public Post PostURL { get; set; }
 
-        public Post postURA { get; set; }
+        public string ImageURL { get; set; }
 
-        public string instruction { get; set; }
+        public Recipe()
+        {
+            Ingredients = new List<string>();
+        }
     }
 }

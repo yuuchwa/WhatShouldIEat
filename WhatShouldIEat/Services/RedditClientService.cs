@@ -29,14 +29,14 @@ namespace WhatShouldIEat.Services
             RetrievAccessToken();
         }
 
-        public void RequestRecepies(Recipe recipe)
+        public List<Post> RequestRecipePosts(Recipe recipe)
         {
-            string ingredientsString = "";
             string subredditName = "recipes";
             SearchGetSearchInput searchInput;
 
-            if (recipe.Ingredients != null)
+            if (recipe.Ingredients != null && recipe.Ingredients.Count > 0)
             {
+                string ingredientsString = "";
                 foreach (string ingredient in recipe.Ingredients)
                 {
                     ingredientsString += ingredient + " ";
@@ -48,52 +48,32 @@ namespace WhatShouldIEat.Services
                 searchInput = new SearchGetSearchInput(recipe.Dish);
             }
 
-            List<Post> posts = reddit.Subreddit(subredditName).Search(searchInput);  // Search r/MySub
-
-            // Backup search, if no recipe could be found in the selected subreddit
-            if (posts.Count == 0)
-            {
-                posts = reddit.Subreddit("all").Search(searchInput);  // Search r/all
+            return reddit.Subreddit(subredditName).Search(searchInput);
             }
 
-            string title = posts[0].Title;
-            string instruction = FindInstructionForRecipe(posts[0]);
-            //string instruction = getPosOfWord(temp, "instructions");
-        }
-
-        private string FindInstructionForRecipe(Post post)
+        public Comment FindInstructionInPost(string originalPoster, List<Comment> postComments)
         {
-            string originalPoster = post.Author;
-            List<Comment> postComments = post.Comments.GetComments();
             List<Comment> commentsFormOp = FindCommentsFromOP(originalPoster, postComments);
-            string instruction = "";
+            Comment commentWithInstruction = null;
 
-            if(commentsFormOp.Count > 0)
+            if (commentsFormOp.Count > 0)
             {
-                foreach(Comment comment in commentsFormOp)
+                foreach (Comment comment in commentsFormOp)
                 {
-                    int index = getPosOfWord(comment.Body.ToLower(), "ingredients");
-
-                    if (index >= 0)
+                    if(comment.Body.ToLower().Contains("ingredients") &&
+                        comment.Body.ToLower().Contains("instructions"))
                     {
-                        instruction = comment.Body.Substring(index);
-                        while (instruction[0] != '1')
-                        {
-                            instruction = instruction.Substring(1);
-                            // entferne überschüssigen Code.
-                        }
+                        commentWithInstruction = comment;
                     }
-                    Console.WriteLine(instruction);
                 }
             }
-
-            return instruction;
+            return commentWithInstruction;
         }
 
         /*
          * Sucht der Position eines bestimmten Wortes in einem String.
          */
-        private int getPosOfWord(string strSource, string strStart)
+        public int GetPosOfWord(string strSource, string strStart)
         {
             if (strSource.Contains(strStart))
             {
@@ -103,17 +83,47 @@ namespace WhatShouldIEat.Services
             return -1;
         }
 
-        private List<Comment> FindCommentsFromOP(string originalPoster, List<Comment> comments)
+        public List<Comment> FindCommentsFromOP(string originalPoster, List<Comment> comments)
         {
             List<Comment> commentsFromOp = new List<Comment>();
-            foreach(Comment comment in comments)
+            foreach (Comment comment in comments)
             {
-                if(String.Compare(originalPoster, comment.Author) == 0)
+                if (String.Compare(originalPoster, comment.Author) == 0)
                 {
                     commentsFromOp.Add(comment);
                 }
             }
             return commentsFromOp;
+        }
+
+        public string GetTextBetween(string strSource, string strStart, string strEnd)
+        {
+            string strRes = "";
+
+            if (strSource.Contains(strStart) && strSource.Contains(strEnd))
+            {
+                int Pos1 = strSource.IndexOf(strStart) + strStart.Length;
+                int Pos2 = strSource.IndexOf(strEnd);
+                strRes = strSource.Substring(Pos1, Pos2 - Pos1);
+            }
+            return strRes;
+        }
+
+        public string GetInstructionFromComment(Comment comment)
+        {
+            int index = GetPosOfWord(comment.Body.ToLower(), "instructions");
+            string instruction = "";
+
+            if (index >= 0)
+            {
+                instruction = comment.Body.Substring(index);
+                while (instruction[0] != '\n' && instruction[1] != '\n')
+                {
+                    instruction = instruction.Substring(1);
+                    // entferne überschüssigen Code.
+                }
+            }
+            return instruction;
         }
 
         private void RetrievAccessToken()
@@ -159,5 +169,7 @@ namespace WhatShouldIEat.Services
                 Process.Start(processStartInfo);
             }
         }
+
+
     }
 }

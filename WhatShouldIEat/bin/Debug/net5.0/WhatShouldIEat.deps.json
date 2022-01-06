@@ -10,6 +10,8 @@
         "dependencies": {
           "Mars.Life.Simulations": "4.2.0",
           "Microsoft.NETCore.Platforms": "5.0.3",
+          "Newtonsoft.Json": "13.0.1",
+          "RecipeIngredientParser.Core": "2.0.0",
           "Reddit": "1.5.0",
           "Reddit.AuthTokenRetrieverLib": "1.5.1"
         },
@@ -38,7 +40,7 @@
       },
       "JsonSubTypes/1.8.0": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/JsonSubTypes.dll": {
@@ -78,7 +80,7 @@
       "Mars.Base/4.2.0": {
         "dependencies": {
           "NetTopologySuite": "2.1.0",
-          "Newtonsoft.Json": "12.0.3",
+          "Newtonsoft.Json": "13.0.1",
           "System.IO.FileSystem": "4.3.0",
           "System.Runtime.CompilerServices.Unsafe": "5.0.0",
           "System.Runtime.Extensions": "4.3.1",
@@ -520,7 +522,7 @@
         "dependencies": {
           "NetTopologySuite": "2.1.0",
           "NetTopologySuite.Features": "2.1.0",
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/NetTopologySuite.IO.GeoJSON.dll": {
@@ -553,11 +555,11 @@
           }
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.3.23909"
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
           }
         }
       },
@@ -584,10 +586,18 @@
           }
         }
       },
+      "RecipeIngredientParser.Core/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/RecipeIngredientParser.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Reddit/1.5.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "12.0.3",
+          "Newtonsoft.Json": "13.0.1",
           "RestSharp": "106.6.9"
         },
         "runtime": {
@@ -599,7 +609,7 @@
       },
       "Reddit.AuthTokenRetrieverLib/1.5.1": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3",
+          "Newtonsoft.Json": "13.0.1",
           "RestSharp": "106.6.9",
           "uhttpsharp.Standard": "8.0.30703.1"
         },
@@ -1662,7 +1672,7 @@
       "uhttpsharp.Standard/8.0.30703.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/uhttpsharp.dll": {
@@ -1932,12 +1942,12 @@
       "path": "nettopologysuite.io.shapefile/2.0.0",
       "hashPath": "nettopologysuite.io.shapefile.2.0.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/12.0.3": {
+    "Newtonsoft.Json/13.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
-      "path": "newtonsoft.json/12.0.3",
-      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
     "Npgsql/5.0.1.1": {
       "type": "package",
@@ -1959,6 +1969,13 @@
       "sha512": "sha512-7hzHplEIVOGBl5zOQZGX/DiJDHjq+RVRVrYgDiqXb6RriqWAdacXxp+XO9WSrATCEXyNOUOQg9aqQArsjase/A==",
       "path": "pipelines.sockets.unofficial/2.2.0",
       "hashPath": "pipelines.sockets.unofficial.2.2.0.nupkg.sha512"
+    },
+    "RecipeIngredientParser.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vuWC8GpGh6HmKgOQdY9N4ITVDvT/h7EccWmxX13hXoTaQ1Rk3l9sY8LLrG0ZkhyTBtVgs3Gzu+eIWWFF6Is28A==",
+      "path": "recipeingredientparser.core/2.0.0",
+      "hashPath": "recipeingredientparser.core.2.0.0.nupkg.sha512"
     },
     "Reddit/1.5.0": {
       "type": "package",

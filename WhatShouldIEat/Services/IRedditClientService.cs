@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 
 /* Reddit Client API */
 using Reddit;
+using Reddit.Controllers;
 using WhatShouldIEat.Model;
 
 namespace WhatShouldIEat.Services
 {
     interface IRedditClientService
     {
-        public void RequestRecepies(Recipe recipe);
+        public List<Post> RequestRecipePosts(Recipe recipe);
 
-        //public void RequestRecepiesByCountry(List<string> ingredieces, string nationality);
+        public Comment FindInstructionInPost(string originalPoster, List<Comment> postComments);
+
+        public int GetPosOfWord(string strSouce, string strStart);
+
+        public string GetTextBetween(string strSource, string strStart, string strEnd);
+
+        public List<Comment> FindCommentsFromOP(string originalPoster, List<Comment> comments);
+
+        public string GetInstructionFromComment(Comment comment);
     }
 }

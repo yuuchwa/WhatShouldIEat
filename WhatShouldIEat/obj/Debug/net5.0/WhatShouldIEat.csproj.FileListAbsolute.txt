@@ -216,3 +216,4 @@ E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\RestSharp.dll
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\AuthTokenRetrieverLib.dll
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\uhttpsharp.dll
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\RecipeIngredientParser.Core.dll

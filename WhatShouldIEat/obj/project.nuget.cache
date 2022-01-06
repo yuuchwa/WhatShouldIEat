@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CUlsM5qIUvPt38SWQvaQOv2SRExkn/rsER3A1hDQYhJTtSoKRIEP8cRNIMGCnuNu3to4bhfEZHu/L0OygUrdiQ==",
+  "dgSpecHash": "1njpF65rpq9vlgw1BSRqE8U/jK1dgZpqPguG4ftJn2AmTIIts8S6gvIoVSZG4uE2kvDAo+AF4njP6yLK2//ZXQ==",
   "success": true,
   "projectFilePath": "E:\\Studium\\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\\MyPDT\\WhatShouldIEat\\WhatShouldIEat\\WhatShouldIEat.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\leon-\\.nuget\\packages\\npgsql\\5.0.1.1\\npgsql.5.0.1.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\nuget.commandline\\3.5.0\\nuget.commandline.3.5.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "C:\\Users\\leon-\\.nuget\\packages\\recipeingredientparser.core\\2.0.0\\recipeingredientparser.core.2.0.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\reddit\\1.5.0\\reddit.1.5.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\reddit.authtokenretrieverlib\\1.5.1\\reddit.authtokenretrieverlib.1.5.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\restsharp\\106.6.9\\restsharp.106.6.9.nupkg.sha512",

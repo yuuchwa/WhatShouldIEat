@@ -657,6 +657,15 @@
           "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {}
         }
       },
+      "RecipeIngredientParser.Core/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/RecipeIngredientParser.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/RecipeIngredientParser.Core.dll": {}
+        }
+      },
       "Reddit/1.5.0": {
         "type": "package",
         "dependencies": {
@@ -4047,6 +4056,19 @@
         "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
         "pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
         "pipelines.sockets.unofficial.nuspec"
+      ]
+    },
+    "RecipeIngredientParser.Core/2.0.0": {
+      "sha512": "vuWC8GpGh6HmKgOQdY9N4ITVDvT/h7EccWmxX13hXoTaQ1Rk3l9sY8LLrG0ZkhyTBtVgs3Gzu+eIWWFF6Is28A==",
+      "type": "package",
+      "path": "recipeingredientparser.core/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/RecipeIngredientParser.Core.dll",
+        "lib/netstandard2.1/RecipeIngredientParser.Core.xml",
+        "recipeingredientparser.core.2.0.0.nupkg.sha512",
+        "recipeingredientparser.core.nuspec"
       ]
     },
     "Reddit/1.5.0": {
@@ -9009,6 +9031,7 @@
       "Mars.Life.Simulations >= 4.2.0",
       "Microsoft.NETCore.Platforms >= 5.0.3",
       "Newtonsoft.Json >= 13.0.1",
+      "RecipeIngredientParser.Core >= 2.0.0",
       "Reddit >= 1.5.0",
       "Reddit.AuthTokenRetrieverLib >= 1.5.1"
     ]
@@ -9063,6 +9086,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
+          },
+          "RecipeIngredientParser.Core": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Reddit": {
             "target": "Package",
