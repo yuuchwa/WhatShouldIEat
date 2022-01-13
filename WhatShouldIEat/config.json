@@ -9,8 +9,8 @@
   },
   "layers": [
     {
-      "name": "RecipeGridLayer",
-      "file": "Resources/ingredientsgrid.csv"
+      "name": "PreferenceGridLayer",
+      "file": "Resources/test.csv"
     }
   ],
   "agents": [

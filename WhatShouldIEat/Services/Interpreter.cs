@@ -18,15 +18,13 @@ namespace WhatShouldIEat.Services
         public Recipe ReceiveNewRecipeRequest()
         {
             Recipe recipe = new Recipe();
-
-            //Console.WriteLine("Was möchtest du heute ausprobieren.");
             while (true)
             {
                 int option = 0;
 
                 Console.WriteLine("Wonach möchtest du heute suchen?");
-                Console.WriteLine("1) Ein Rezept aus bestimmten Zutaten?");
-                Console.WriteLine("2) Ein Rezept für ein bestimmtes Gericht?");
+                Console.WriteLine("1 - Ein Rezept aus bestimmten Zutaten?");
+                Console.WriteLine("2 - Ein Rezept für ein bestimmtes Gericht?");
                 if (int.TryParse(Console.ReadLine(), out option))
                 {
                     string responseText = "";
@@ -66,16 +64,56 @@ namespace WhatShouldIEat.Services
             return recipe; 
         }
 
+        public bool CheckIfUserLikesTheRecipe(Recipe recipe)
+        {
+            int option = 0;
+            int attempts = 5;
+            int counter = 0;
+            PrintRecipe(recipe);
+
+            Console.WriteLine("Findest du das Rezept interessant? Möchtest du es nachkochen?");
+            Console.WriteLine("1 - Ja");
+            Console.WriteLine("2 - Nein");
+
+            while(counter < attempts)
+            {
+                if (int.TryParse(Console.ReadLine(), out option))
+                {
+                    if (option == 1)
+                    {
+                        Console.WriteLine("Gute Wahl! Viel Spaß beim Kochen und guten Hunger!");
+                        return true;
+                    }
+                    else if(option == 2)
+                    {
+                        Console.WriteLine("Schade, dann suchen wir nach einem neuen Rezept...");
+                        return false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Leider ist das keine gültige Eingabe, Versuche es erneut.");
+                    }
+                }
+            }
+            return false;
+        }
+
+        public void WaitForFeedback()
+        {
+            Console.WriteLine("\nFalls du eine Bewertung abgeben möchtest, kannst du auf Enter klicken, um eine Rückmeldung abzugeben.");
+            Console.ReadKey();
+        }
+
         public void PrintRecipe(Recipe recipe)
         {
-            Console.WriteLine("\nTitle: " + recipe.Title);
-            Console.WriteLine("Author: " + recipe.Author);
-            Console.WriteLine("Ingredients: \n");
+            Console.WriteLine("\nTitel: " + recipe.Title);
+            Console.WriteLine("Autor: " + recipe.Author);
+            Console.WriteLine("Zutaten: \n");
             foreach(string ingredient in recipe.Ingredients)
             {
                 Console.WriteLine("- " + ingredient);
             }
-            Console.WriteLine("\nInstruction\n");
+            Console.WriteLine("\nBeschreibung");
             Console.WriteLine(recipe.Instruction);
         }
     }

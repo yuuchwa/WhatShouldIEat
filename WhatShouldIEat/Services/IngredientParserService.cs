@@ -23,10 +23,14 @@ namespace WhatShouldIEat.Services
             CreateParser();
         }
 
-        public string ParseIngredients(string ingredient)
+        public string ParseIngredients(string ingredients)
         {
-            ingredient = SanitizeInput(ingredient);
-            if(this.ingredientParser.TryParseIngredient(ingredient, out var parseResult))
+            Console.WriteLine(ingredients);
+            ingredients = SanitizeInput(ingredients);
+            Console.WriteLine();
+            Console.WriteLine(ingredients);
+
+            if (this.ingredientParser.TryParseIngredient(ingredients, out var parseResult))
             {
                 //Console.WriteLine($"\tIngredient: {parseResult.Details.Ingredient}");
                 return parseResult.Details.Ingredient;

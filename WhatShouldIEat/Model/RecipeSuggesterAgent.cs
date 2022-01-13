@@ -11,18 +11,22 @@ namespace WhatShouldIEat.Model
     ///  A simple agent stub that has an Init() method for initialization and a
     ///  Tick() method for acting in every tick of the simulation.
     /// </summary>
-    public class RecipeSuggesterAgent : IAgent<RecipeGridLayer>
+    public class RecipeSuggesterAgent : IAgent<PreferenceGridLayer>
     {
         IRedditClientService redditClient;
         IIngredientParserService IngredientParserService;
         Interpreter Interpreter;
+        IPreferenceParserService preferenceService;
+        Dictionary<string, string> preferences;
 
-        public void Init(RecipeGridLayer layer)
+        public void Init(PreferenceGridLayer layer)
         {
             Layer = layer; // store layer for access within agent class
             redditClient = new RedditClientService();
             Interpreter = new Interpreter();
             IngredientParserService = new IngredientParserService();
+            preferenceService = new PreferenceParserService();
+            preferences = preferenceService.GetUserPreference();
         }
 
         public void Tick()
@@ -30,6 +34,7 @@ namespace WhatShouldIEat.Model
             //do something useful in every tick of the simulation
             Recipe recipe = Interpreter.ReceiveNewRecipeRequest();
             List<Post> posts = redditClient.RequestRecipePosts(recipe);
+            bool recipeNotFound = true;
 
             foreach (Post post in posts)
             {
@@ -64,15 +69,78 @@ namespace WhatShouldIEat.Model
                     }
                     string instruction = redditClient.GetInstructionFromComment(commentWithInstruction);
                     recipe.Instruction = IngredientParserService.RemoveUnnecessarySymbols(instruction);
-                    Interpreter.PrintRecipe(recipe);
-                    break;
+                    if (CheckIfUserMightLikeRecipe(recipe))
+                    {
+                        if (Interpreter.CheckIfUserLikesTheRecipe(recipe))
+                        {
+                            Interpreter.WaitForFeedback();
+                            recipeNotFound = false;
+                            break;
+                        }
+                        else
+                        {
+
+                            recipeNotFound = false;
+                            break;
+                        }
+                    }
                 }
             }
+
+            if(recipeNotFound)
+            {
+                Console.WriteLine("Leider konnte passendes Rezept gefunden werden.");
+                Console.WriteLine();
+            }
+
         }
-
-
-        private RecipeGridLayer Layer { get; set; } // provides access to the main layer of this agent
-        
         public Guid ID { get; set; } // identifies the agent
+
+        private PreferenceGridLayer Layer { get; set; } // provides access to the main layer of this agent
+
+        private bool CheckIfUserMightLikeRecipe(Recipe recipe)
+        {
+            bool suitsUsersPreference = true;
+            List<int> scores = new List<int>();
+
+            foreach(string ingredient in recipe.Ingredients)
+            {
+                if (preferences.ContainsKey(ingredient))
+                {
+                    string score;
+                    preferences.TryGetValue(ingredient, out score);
+
+                    if(Convert.ToInt32(score) < 20)
+                    {
+                        suitsUsersPreference = false;
+                        break;
+                    }
+
+                    scores.Add(Convert.ToInt32(score));
+                }
+            }
+            if(scores.Count > 0)
+            {
+                if (meanScoreIsBelowTolerance(scores))
+                {
+                    suitsUsersPreference = false;
+                }
+            }
+
+            return suitsUsersPreference;
+        }
+        
+
+        private bool meanScoreIsBelowTolerance(List<int> scores)
+        {
+            int meanScore = 0;
+            foreach(int score in scores)
+            {
+                meanScore += score;
+            }
+            meanScore /= scores.Count();
+
+            return meanScore > 30 ? true : false;
+        }
     }
 }

@@ -16,8 +16,8 @@ namespace WhatShouldIEat
             
             // Create a new model description that holds all parts of the model, here: one agent type and one layer
             var description = new ModelDescription();
-            description.AddLayer<RecipeGridLayer>(); // we'll use a simple grid layer here
-            description.AddAgent<Model.RecipeSuggesterAgent, RecipeGridLayer>(); // the agent type will be located at the grid layer
+            description.AddLayer<PreferenceGridLayer>(); // we'll use a simple grid layer here
+            description.AddAgent<Model.RecipeSuggesterAgent, PreferenceGridLayer>(); // the agent type will be located at the grid layer
 
             // scenario definition
             // use config.json that provides the specification of the scenario

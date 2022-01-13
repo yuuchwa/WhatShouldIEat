@@ -1,0 +1,6 @@
+[ERROR] 2022-01-11 09:05:30,272 | Mars.Core.Executor.Implementation.StepExecutionUseCase - Length cannot be less than zero. (Parameter 'length') 
+[ERROR] 2022-01-11 09:05:30,278 | Mars.Components.Starter.SimulationStarter - MARS simulation execution crashed by ArgumentOutOfRangeException 
+[ERROR] 2022-01-11 09:05:30,279 | Mars.Components.Starter.SimulationStarter - Exception message: 
+[ERROR] 2022-01-11 09:05:30,279 | Mars.Components.Starter.SimulationStarter - ######################################################## 
+[ERROR] 2022-01-11 09:05:30,279 | Mars.Components.Starter.SimulationStarter - Length cannot be less than zero. (Parameter 'length') 
+[ERROR] 2022-01-11 09:05:30,279 | Mars.Components.Starter.SimulationStarter - ######################################################## 

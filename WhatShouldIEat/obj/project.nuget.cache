@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1njpF65rpq9vlgw1BSRqE8U/jK1dgZpqPguG4ftJn2AmTIIts8S6gvIoVSZG4uE2kvDAo+AF4njP6yLK2//ZXQ==",
+  "dgSpecHash": "Inx6Oz+RUi4dHp00wIvw67SP2LF0xQ08PFC1rFf4VqAZO/MvSpV+VSML6DRLBMz0CLLem4+8mbVaSe0Qhw8FCw==",
   "success": true,
   "projectFilePath": "E:\\Studium\\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\\MyPDT\\WhatShouldIEat\\WhatShouldIEat\\WhatShouldIEat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leon-\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\leon-\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\jsonsubtypes\\1.8.0\\jsonsubtypes.1.8.0.nupkg.sha512",
     "C:\\Users\\leon-\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",

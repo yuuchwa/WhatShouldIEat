@@ -1,6 +1,6 @@
 ﻿namespace WhatShouldIEat.Services
 {
-    public class Posts
+    public class Dictionary<T>
     {
     }
 }

@@ -217,3 +217,7 @@ E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\AuthTokenRetrieverLib.dll
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\uhttpsharp.dll
 E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\RecipeIngredientParser.Core.dll
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\Resources\ingredientsgrid.json
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\Resources\preferences.csv
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\Resources\test.csv
+E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\bin\Debug\net5.0\CsvHelper.dll
