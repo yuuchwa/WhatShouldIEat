@@ -31,7 +31,7 @@ namespace WhatShouldIEat.Model
 
         public void Tick()
         {
-            //do something useful in every tick of the simulation
+            /* Get Recipes from Reddit */
             Recipe recipe = Interpreter.ReceiveNewRecipeRequest();
             List<Post> posts = redditClient.RequestRecipePosts(recipe);
             bool recipeNotFound = true;
@@ -48,13 +48,13 @@ namespace WhatShouldIEat.Model
 
                 if(commentWithInstruction != null)
                 {
-                    // Find alle Zutaten
-                    // Überprüfen, ob die Zutaten passen
+                    /* Find Substring where the ingrediets are located*/
                     List<string> ingredientsStrList = redditClient
-                        .GetTextBetween(commentWithInstruction.Body.ToLower(), "ingredients", "instructions")
+                        .GetIngredientsInComment(commentWithInstruction.Body.ToLower())
                         .Split("\n\n")
                         .ToList();
 
+                    /* Identify ingredients in string */
                     string ingredient = "";
                     foreach (string ingredientStr in ingredientsStrList)
                     {
@@ -67,8 +67,12 @@ namespace WhatShouldIEat.Model
                             }
                         }
                     }
+
+                    /* Find instruction */
                     string instruction = redditClient.GetInstructionFromComment(commentWithInstruction);
                     recipe.Instruction = IngredientParserService.RemoveUnnecessarySymbols(instruction);
+
+                    /* Recommend recipe to user */
                     if (CheckIfUserMightLikeRecipe(recipe))
                     {
                         if (Interpreter.CheckIfUserLikesTheRecipe(recipe))

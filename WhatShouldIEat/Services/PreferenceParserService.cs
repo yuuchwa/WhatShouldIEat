@@ -15,20 +15,11 @@ namespace WhatShouldIEat.Services
         //private string PATH_TO_PREFERENCE_CSV = @"E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\Resources\preferences.csv";
         private string PATH_TO_PREFERENCE_CSV = @"E:\Studium\ITS6_Kuenstliche_Intelligenz_und_Software_Agents\MyPDT\WhatShouldIEat\WhatShouldIEat\Resources\ingredientsgrid.csv";
 
-/*        public List<UserPreference> GetUserPreference()
-        {
-            var preferences = File.ReadLines(PATH_TO_PREFERENCE_CSV)
-                .Skip(1)
-                .Select(x => UserPreference.FromCsv(x))
-                .ToList();
-            return preferences;
-        }*/
-
         public Dictionary<string, string> GetUserPreference()
         {
             Dictionary<string, string> preferences = File
                 .ReadLines(PATH_TO_PREFERENCE_CSV)
-                .Select(line => line.Split(','))
+                .Select(line => line.Split(',')
                 .ToDictionary(line => line[0], line => line[1]);
 
             return preferences;

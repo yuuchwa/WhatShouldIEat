@@ -19,7 +19,7 @@ namespace WhatShouldIEat.Services
 
         public int GetPosOfWord(string strSouce, string strStart);
 
-        public string GetTextBetween(string strSource, string strStart, string strEnd);
+        public string GetIngredientsInComment(string strSource);
 
         public List<Comment> FindCommentsFromOP(string originalPoster, List<Comment> comments);
 

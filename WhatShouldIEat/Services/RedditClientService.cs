@@ -96,15 +96,28 @@ namespace WhatShouldIEat.Services
             return commentsFromOp;
         }
 
-        public string GetTextBetween(string strSource, string strStart, string strEnd)
+        public string GetIngredientsInComment(string strSource)
         {
             string strRes = "";
+            string[] ingredientsStringVariations = { "**ingredients**", "**ingredients:**", "ingredients:", "*ingredients*", "*ingredients:*",
+                                                     "shoppinglist", " **shoppinglist**", "**shoppinglist:**", "shoppinglist:", "*shoppinglist:*" };
 
-            if (strSource.Contains(strStart) && strSource.Contains(strEnd))
+            string[] instructionStringVariations = { "**instructions**", "**instructions:**", "*instructions:*", "instructions:", "*instructions*",
+                                                     "**directions**", "**directions:**", "*directions:*", "directions:", "*directions*",
+                                                     "**method**", "**method:**", "*method:*", "method:", "*method*",
+                                                     "**preperation**", "**preperation:**", "*preperation:*", "preperation:", "*preperation*"};
+
+            foreach (string strStart in ingredientsStringVariations)
             {
-                int Pos1 = strSource.IndexOf(strStart) + strStart.Length;
-                int Pos2 = strSource.IndexOf(strEnd);
-                strRes = strSource.Substring(Pos1, Pos2 - Pos1);
+                foreach(string strEnd in instructionStringVariations)
+                {
+                    if (strSource.Contains(strStart) && strSource.Contains(strEnd))
+                    {
+                        int Pos1 = strSource.IndexOf(strStart) + strStart.Length;
+                        int Pos2 = strSource.IndexOf(strEnd);
+                        strRes = strSource.Substring(Pos1, Pos2 - Pos1);
+                    }
+                }
             }
             return strRes;
         }

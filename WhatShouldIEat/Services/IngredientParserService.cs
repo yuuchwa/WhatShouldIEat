@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// https://github.com/JedS6391/RecipeIngredientParser
 using RecipeIngredientParser.Core.Parser;
 using RecipeIngredientParser.Core.Parser.Extensions;
 using RecipeIngredientParser.Core.Parser.Sanitization;
-using RecipeIngredientParser.Core.Parser.Strategy;
-using RecipeIngredientParser.Core.Tokens;
-using RecipeIngredientParser.Core.Tokens.Abstract;
 
 namespace WhatShouldIEat.Services
 {
@@ -25,10 +23,7 @@ namespace WhatShouldIEat.Services
 
         public string ParseIngredients(string ingredients)
         {
-            Console.WriteLine(ingredients);
             ingredients = SanitizeInput(ingredients);
-            Console.WriteLine();
-            Console.WriteLine(ingredients);
 
             if (this.ingredientParser.TryParseIngredient(ingredients, out var parseResult))
             {
