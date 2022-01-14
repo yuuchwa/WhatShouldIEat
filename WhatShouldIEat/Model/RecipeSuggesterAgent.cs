@@ -4,6 +4,7 @@ using System.Linq;
 using Mars.Interfaces.Agents;
 using Reddit.Controllers;
 using WhatShouldIEat.Services;
+using WhatShouldIEat.Model;
 
 namespace WhatShouldIEat.Model
 {
@@ -13,11 +14,13 @@ namespace WhatShouldIEat.Model
     /// </summary>
     public class RecipeSuggesterAgent : IAgent<PreferenceGridLayer>
     {
+        public int DEFAULT_SCORE = 50;
+
         IRedditClientService redditClient;
         IIngredientParserService IngredientParserService;
         Interpreter Interpreter;
-        IPreferenceParserService preferenceService;
-        Dictionary<string, string> preferences;
+        IPreferenceParserService PreferenceService;
+        Dictionary<string, int> preferences;
 
         public void Init(PreferenceGridLayer layer)
         {
@@ -25,19 +28,20 @@ namespace WhatShouldIEat.Model
             redditClient = new RedditClientService();
             Interpreter = new Interpreter();
             IngredientParserService = new IngredientParserService();
-            preferenceService = new PreferenceParserService();
-            preferences = preferenceService.GetUserPreference();
+            PreferenceService = new PreferenceParserService();
+            preferences = PreferenceService.GetUserPreference();
         }
 
         public void Tick()
         {
             /* Get Recipes from Reddit */
-            Recipe recipe = Interpreter.ReceiveNewRecipeRequest();
-            List<Post> posts = redditClient.RequestRecipePosts(recipe);
+            Recipe recipeRequest = Interpreter.ReceiveNewRecipeRequest();
+            List<Post> posts = redditClient.RequestRecipePosts(recipeRequest);
             bool recipeNotFound = true;
 
             foreach (Post post in posts)
             {
+                Recipe recipe = new Recipe();
                 recipe.Title = post.Title;
                 recipe.Author = post.Author;
 
@@ -51,16 +55,23 @@ namespace WhatShouldIEat.Model
                     /* Find Substring where the ingrediets are located*/
                     List<string> ingredientsStrList = redditClient
                         .GetIngredientsInComment(commentWithInstruction.Body.ToLower())
-                        .Split("\n\n")
+                        .Split("\n")
                         .ToList();
+
+                    if (ingredientsStrList == null)
+                    {
+                        continue;
+                    }
+
+                    ingredientsStrList = removeExcessiveListElement(ingredientsStrList);
 
                     /* Identify ingredients in string */
                     string ingredient = "";
                     foreach (string ingredientStr in ingredientsStrList)
                     {
-                        string cleanedStr = IngredientParserService.RemoveUnnecessarySymbols(ingredientStr);
-                        if (!String.IsNullOrEmpty(cleanedStr))
+                        if (!String.IsNullOrEmpty(ingredientStr))
                         {
+                            string cleanedStr = IngredientParserService.RemoveUnnecessarySymbols(ingredientStr);
                             if (!String.IsNullOrEmpty(ingredient = IngredientParserService.ParseIngredients(cleanedStr)))
                             {
                                 recipe.Ingredients.Add(ingredient);
@@ -77,52 +88,60 @@ namespace WhatShouldIEat.Model
                     {
                         if (Interpreter.CheckIfUserLikesTheRecipe(recipe))
                         {
-                            Interpreter.WaitForFeedback();
+                            int feedback = Interpreter.WaitForFeedback();
+                            updateIngredientPreferencesList(recipe, feedback);
                             recipeNotFound = false;
                             break;
                         }
                         else
                         {
-
-                            recipeNotFound = false;
-                            break;
+                            // Reduce ingredient score by 2
+                            updateIngredientPreferencesList(recipe, 6);
+                            Console.Clear();
                         }
                     }
+                }
+                else
+                {
+                    Console.Clear();
                 }
             }
 
             if(recipeNotFound)
             {
                 Console.WriteLine("Leider konnte passendes Rezept gefunden werden.");
-                Console.WriteLine();
+                Console.WriteLine("\n");
             }
 
         }
         public Guid ID { get; set; } // identifies the agent
 
-        private PreferenceGridLayer Layer { get; set; } // provides access to the main layer of this agent
+        private PreferenceGridLayer Layer { get; set; }
 
         private bool CheckIfUserMightLikeRecipe(Recipe recipe)
         {
             bool suitsUsersPreference = true;
             List<int> scores = new List<int>();
+            List<string> ingredients = recipe.Ingredients;
 
-            foreach(string ingredient in recipe.Ingredients)
+            int score = 0;
+            foreach (string ingredient in recipe.Ingredients)
             {
-                if (preferences.ContainsKey(ingredient))
+                if(!preferences.ContainsKey(ingredient) || !preferences.TryGetValue(ingredient, out score))
                 {
-                    string score;
-                    preferences.TryGetValue(ingredient, out score);
-
-                    if(Convert.ToInt32(score) < 20)
-                    {
-                        suitsUsersPreference = false;
-                        break;
-                    }
-
-                    scores.Add(Convert.ToInt32(score));
+                    preferences.Add(ingredient, DEFAULT_SCORE);
+                    score = DEFAULT_SCORE;
                 }
+
+                if(score < 20)
+                {
+                    suitsUsersPreference = false;
+                    break;
+                }
+
+                scores.Add(score);
             }
+
             if(scores.Count > 0)
             {
                 if (meanScoreIsBelowTolerance(scores))
@@ -144,7 +163,32 @@ namespace WhatShouldIEat.Model
             }
             meanScore /= scores.Count();
 
-            return meanScore > 30 ? true : false;
+            return meanScore < 30 ? true : false;
+        }
+
+        private List<string> removeExcessiveListElement(List<string> list)
+        {
+            list.RemoveAll(x => x.Length < 2);
+            return list;
+        }
+
+        private void updateIngredientPreferencesList(Recipe recipe, int rating) // Enum rein
+        {
+            int bonus = 0;
+            switch (rating)
+            {
+                case 1: bonus = 10; break;
+                case 2: bonus = 5; break;
+                case 3: bonus = 1; break;
+                case 4: bonus = -5; break;
+                case 5: bonus = -10; break;
+                case 6: bonus = -2; break;
+            }
+            foreach (string ingredient in recipe.Ingredients)
+            {
+                preferences[ingredient] += bonus;
+                PreferenceService.SetUserPreferences(preferences);
+            }
         }
     }
 }

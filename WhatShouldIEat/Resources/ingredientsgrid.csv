@@ -1,979 +1,978 @@
-Ingredient,Score
-Angelica,50
-Savoy cabbage,50
-Silver linden,50
-Kiwi,50
-Allium,50
-Garden onion,50
-Leek,50
-Garlic,50
-Chives,50
-Lemon verbena,50
-Cashew nut,50
-Pineapple,50
-Dill,50
-Custard apple,50
-Wild celery,50
-Peanut,50
-Burdock,50
-Horseradish,50
-Tarragon,50
-Mugwort,50
-Asparagus,50
-Oat,50
-Star fruit,50
-Brazil nut,50
-Common beet,50
-Borage,50
-Chinese mustard,50
-Swede,50
-Rape,50
-Common cabbage,50
-Cauliflower,50
-Brussel sprouts,50
-Kohlrabi,50
-Broccoli,50
-Chinese cabbage,50
-Turnip,50
-Pigeon pea,50
-Tea,50
-Capers,50
-Pepper,50
-Papaya,50
-Safflower,50
-Caraway,50
-Pecan nut,50
-Chestnut,50
-Roman camomile,50
-Chickpea,50
-Endive,50
-Chicory,50
-Chinese cinnamon,50
-Ceylon cinnamon,50
-Watermelon,50
-Lime,50
-Lemon,50
-Pummelo,50
-"Orange,50
-Sweet orange,50
-Coffee,50
-Arabica coffee,50
-Robusta coffee,50
-Coriander,50
-Common hazelnut,50
-Saffron,50
-Muskmelon,50
-Cucumber,50
-Cucurbita,50
-Cumin,50
-Turmeric,50
-Quince,50
-Lemon grass,50
-Globe artichoke,50
-Wild carrot,50
-Japanese persimmon,50
-Cardamom,50
-Black crowberry,50
-Loquat,50
-Rocket salad (ssp.),50
-Wax apple,50
-Common buckwheat,50
-Tartary buckwheat,50
-Fig,50
-Fennel,50
-Strawberry,50
-Black huckleberry,50
-Soy bean,50
-Sunflower,50
-Sea-buckthornberry,50
-Barley,50
-Hyssop,50
-Star anise,50
-Swamp cabbage,50
-Sweet potato,50
-Black walnut,50
-Common walnut,50
-Lettuce,50
-Grass pea,50
-Sweet bay,50
-Lentils,50
-Garden cress,50
-Lovage,50
-Flaxseed,50
-Mexican oregano,50
-Lichee,50
-Lupine,50
-Apple,50
-Mango,50
-German camomile,50
-Lemon balm,50
-Mentha,50
-Orange mint,50
-Cornmint,50
-Spearmint,50
-Peppermint,50
-Medlar,50
-Bitter gourd,50
-Mulberry,50
-Black mulberry,50
-Nutmeg,50
-Sweet basil,50
-Evening primrose,50
-Olive,50
-Sweet marjoram,50
-Pot marjoram,50
-Common oregano,50
-Rice,50
-Millet,50
-Poppy,50
-Passion fruit,50
-Parsnip,50
-Avocado,50
-Parsley,50
-Scarlet bean,50
-Lima bean,50
-Common bean,50
-Date,50
-Black chokeberry,50
-Anise,50
-Pine nut,50
-Pepper (Spice),50
-Pistachio,50
-Common pea,50
-Purslane,50
-Plum,50
-Apricot,50
-Sweet cherry,50
-Sour cherry,50
-European plum,50
-Almond,50
-Peach,50
-Guava,50
-Pomegranate,50
-Pear,50
-Radish,50
-Garden rhubarb,50
-Blackcurrant,50
-Redcurrant,50
-Gooseberry,50
-Watercress,50
-Rosemary,50
-Blackberry,50
-Cloudberry,50
-Red raspberry,50
-Black raspberry,50
-Sorrel,50
-Common sage,50
-Black elderberry,50
-Summer savory,50
-Winter savory,50
-Rye,50
-Sesame,50
-Garden tomato,50
-Cherry tomato,50
-Eggplant,50
-Potato,50
-Rowanberry,50
-Sorghum,50
-Spinach,50
-Cloves,50
-Tamarind,50
-Dandelion,50
-Cocoa bean,50
-Common thyme,50
-Linden,50
-Small-leaf linden,50
-Fenugreek,50
-Common wheat,50
-Blueberry,50
-Lowbush blueberry,50
-Sparkleberry,50
-Highbush blueberry,50
-American cranberry,50
-Bilberry,50
-Lingonberry,50
-Vanilla,50
-Common verbena,50
-Broad bean,50
-Adzuki bean,50
-Gram bean,50
-Mung bean,50
-Climbing bean,50
-Cowpea,50
-Muscadine grape,50
-Common grape,50
-Corn,50
-Ginger,50
-Arctic blackberry,50
-Banana,50
-Bayberry,50
-Elliott's blueberry,50
-Canada blueberry,50
-Bog bilberry,50
-Buffalo currant,50
-Celeriac,50
-Celery stalks,50
-Chinese chives,50
-European cranberry,50
-Deerberry,50
-Ginseng,50
-Cascade huckleberry,50
-Oval-leaf huckleberry,50
-Evergreen huckleberry,50
-Red huckleberry,50
-Longan,50
-Macadamia nut,50
-Garden onion (var.),50
-Summer grape,50
-Fox grape,50
-Nectarine,50
-Peach (var.),50
-Pepper (C. baccatum),50
-Pepper (C. chinense),50
-Pepper (Capsicum),50
-Rambutan,50
-Red rice,50
-Annual wild rice,50
-Swiss chard,50
-Lemon thyme,50
-Tronchuda cabbage,50
-Japanese walnut,50
-Welsh onion,50
-Hard wheat,50
-Shallot,50
-Rocket salad,50
-Carrot,50
-Triticale,50
-Black cabbage,50
-Half-highbush blueberry,50
-Celery leaves,50
-Chicory leaves,50
-Komatsuna,50
-Pak choy,50
-Napa cabbage,50
-Chicory roots,50
-Grapefruit/Pummelo hybrid,50
-Grapefruit,50
-Jostaberry,50
-Kai-lan,50
-Italian oregano,50
-Oxheart cabbage,50
-Daikon radish,50
-Black radish,50
-Radish (var.),50
-Red beetroot,50
-Sweet rowanberry,50
-Pineappple sage,50
-Skunk currant,50
-Beer,50
-Other bread,50
-Breakfast cereal,50
-Other soy product,50
-Other cereal product,50
-Pasta,50
-Biscuit,50
-Sourdough,50
-Spirit,50
-Fortified wine,50
-Other alcoholic beverage,50
-Abalone,50
-Abiyuch,50
-Acerola,50
-Acorn,50
-Winter squash,50
-Agar,50
-Red king crab,50
-Alfalfa,50
-Allspice,50
-Amaranth,50
-Arrowhead,50
-Arrowroot,50
-Asian pear,50
-Atlantic herring,50
-Atlantic mackerel,50
-Painted comber,50
-Atlantic pollock,50
-Atlantic wolffish,50
-Bamboo shoots,50
-Striped bass,50
-Beech nut,50
-Beluga whale,50
-Bison,50
-Alaska blackfish,50
-Blue crab,50
-Blue mussel,50
-Northern bluefin tuna,50
-Bluefish,50
-Wild boar,50
-Bowhead whale,50
-Breadfruit,50
-Breadnut tree seed,50
-Rapini,50
-Buffalo,50
-Burbot,50
-Giant butterbur,50
-American butterfish,50
-Butternut,50
-Butternut squash,50
-Calabash,50
-Cardoon,50
-Natal plum,50
-Carob,50
-Common carp,50
-Cassava,50
-Channel catfish,50
-Chayote,50
-Cherimoya,50
-Chervil,50
-Chia,50
-Chicken,50
-Chinese broccoli,50
-Chinese chestnut,50
-Chinese water chestnut,50
-Garland chrysanthemum,50
-Cisco,50
-Nuttall cockle,50
-Coconut,50
-Pacific cod,50
-Atlantic cod,50
-Common octopus,50
-Corn salad,50
-Cottonseed,50
-Catjang pea,50
-Malus (Crab apple),50
-Squashberry,50
-Atlantic croaker,50
-Cusk,50
-Cuttlefish,50
-Mule deer,50
-Devilfish,50
-Dock,50
-Dolphin fish,50
-Freshwater drum,50
-Mallard duck,50
-Dungeness crab,50
-Durian,50
-Eastern oyster,50
-Freshwater eel,50
-Elderberry,50
-Elk,50
-Emu,50
-Oregon yampah,50
-European anchovy,50
-European chestnut,50
-Turbot,50
-Fireweed,50
-Florida pompano,50
-Ginkgo nuts,50
-Greylag goose,50
-Grape,50
-Greenland halibut/turbot,50
-Groundcherry,50
-Grouper,50
-Guinea hen,50
-Haddock,50
-Hippoglossus (Common halibut),50
-Hazelnut,50
-Hickory nut,50
-Horse,50
-Horseradish tree,50
-Alaska blueberry,50
-Hyacinth bean,50
-Irish moss,50
-Pacific jack mackerel,50
-Jackfruit,50
-Japanese chestnut,50
-Java plum,50
-Jerusalem artichoke,50
-Jujube,50
-Jute,50
-Kale,50
-Kelp,50
-King mackerel,50
-Kumquat,50
-Lambsquarters,50
-Leather chiton,50
-Wild leek,50
-Common ling,50
-Lingcod,50
-American lobster,50
-Loganberry,50
-Lotus,50
-Sacred lotus,50
-White lupine,50
-Malabar spinach,50
-Mammee apple,50
-Purple mangosteen,50
-Alpine sweetvetch,50
-Milkfish,50
-Monkfish,50
-Moth bean,50
-Mountain yam,50
-Striped mullet,50
-White mustard,50
-Mustard spinach,50
-New Zealand spinach,50
-Nopal,50
-Ocean pout,50
-North Pacific giant octopus,50
-Ohelo berry,50
-Okra,50
-Tunicate,50
-Ostrich,50
-Spotted seal,50
-Pacific herring,50
-Pacific oyster,50
-Pacific rockfish,50
-Velvet duck,50
-Pepper (C. frutescens),50
-Common persimmon,50
-Pheasant,50
-Northern pike,50
-Pili nut,50
-Colorado pinyon,50
-Pitanga,50
-Plains prickly pear,50
-French plantain,50
-American pokeweed,50
-Opium poppy,50
-Prairie turnip,50
-Prickly pear,50
-Quinoa,50
-European rabbit,50
-Rainbow smelt,50
-Rainbow trout,50
-Malabar plum,50
-Rose hip,50
-Roselle,50
-Orange roughy,50
-Sablefish,50
-Pink salmon,50
-Chum salmon,50
-Coho salmon,50
-Sockeye salmon,50
-Chinook salmon,50
-Atlantic salmon,50
-Salmonberry,50
-Common salsify,50
-Sapodilla,50
-Mamey sapote,50
-Spanish mackerel,50
-Pacific sardine,50
-Scallop,50
-Scup,50
-Sea cucumber,50
-Steller sea lion,50
-Bearded seal,50
-Ringed seal,50
-Sea trout,50
-Sesbania flower,50
-American shad,50
-Shark,50
-Sheefish,50
-Lamb,50
-Sheepshead,50
-Hedge mustard,50
-Skipjack tuna,50
-Snapper,50
-Soursop,50
-Spelt,50
-Spirulina,50
-Squab,50
-Strawberry guava,50
-Greater sturgeon,50
-White sucker,50
-Sugar apple,50
-Pumpkinseed sunfish,50
-Swordfish,50
-Taro,50
-Teff,50
-Tilefish,50
-Mexican groundcherry,50
-Towel gourd,50
-Salmon,50
-Turkey,50
-Beef,50
-Walleye,50
-Alaska pollock,50
-Wasabi,50
-Wax gourd,50
-Whelk,50
-Coalfish pollock,50
-Broad whitefish,50
-Whitefish,50
-Whiting,50
-Wild rice,50
-Tea leaf willow,50
-Winged bean,50
-Yam,50
-Jicama,50
-Yautia,50
-Yellowfin tuna,50
-Yellowtail amberjack,50
-Pollock,50
-Albacore tuna,50
-Gadus,50
-Atlantic halibut,50
-Pacific halibut,50
-Pacific salmon,50
-Smelt,50
-Herring,50
-Spiny lobster,50
-Snow crab,50
-Black-eyed pea,50
-Deer,50
-Bass,50
-Perciformes,50
-Rabbit,50
-Domestic goat,50
-Beefalo,50
-Clam,50
-Squid,50
-Shrimp,50
-Crayfish,50
-Flatfish,50
-Domestic pig,50
-Walrus,50
-Alaska wild rhubarb,50
-Oriental wheat,50
-Yardlong bean,50
-Quail,50
-Boysenberry,50
-Persian lime,50
-Feijoa,50
-Rowal,50
-Jew's ear,50
-Common mushroom,50
-Shiitake,50
-Purple laver,50
-Wakame,50
-Enokitake,50
-Epazote,50
-Oyster mushroom,50
-Cloud ear fungus,50
-Maitake,50
-Ostrich fern,50
-Spot croaker,50
-Sourdock,50
-Tinda,50
-Atlantic menhaden,50
-Wheat,50
-Common chokecherry,50
-Agave,50
-Narrowleaf cattail,50
-Jellyfish,50
-Anchovy,50
-Blue whiting,50
-Carp bream,50
-Chanterelle,50
-Sturgeon,50
-Charr,50
-Cinnamon,50
-Crab,50
-Common dab,50
-Spiny dogfish,50
-Anatidae,50
-Anguilliformes,50
-True frog,50
-Garfish,50
-Gadiformes,50
-Mountain hare,50
-Lake trout,50
-Lemon sole,50
-Clawed lobster,50
-Lumpsucker,50
-Tuna,50
-Marine mussel,50
-Norway haddock,50
-Norway lobster,50
-Norway pout,50
-Oil palm,50
-True oyster,50
-Sago palm,50
-Persimmon,50
-Pikeperch,50
-Dab,50
-Rock ptarmigan,50
-Pacific ocean perch,50
-Black salsify,50
-True seal,50
-Red algae,50
-Kombu,50
-Snail,50
-True sole,50
-Catfish,50
-Thistle,50
-Thunnus,50
-Walnut,50
-Whale,50
-Dove,50
-Conch,50
-Grape wine,50
-Berry wine,50
-Other wine,50
-Apple cider,50
-Liquor,50
-Cheese,50
-Milk,50
-Egg,50
-Yogurt,50
-Bean,50
-Vodka,50
-Whisky,50
-Ice cream,50
-Gin,50
-Honey,50
-Liquorice,50
-Vinegar,50
-Rum,50
-Port wine,50
-Vermouth,50
-Sherry,50
-Madeira wine,50
-Nougat,50
-Toffee,50
-Cake,50
-Pizza,50
-Ymer,50
-Other snack food,50
-Crisp bread,50
-Pastry,50
-Dragée,50
-Chewing gum,50
-Marzipan,50
-Salad dressing,50
-Sauce,50
-Salt,50
-Butter,50
-Butter substitute,50
-Cream,50
-Sugar,50
-Sausage,50
-Meatball,50
-Mustard,50
-Pate,50
-Sugar substitute,50
-Meat bouillon,50
-Whey,50
-Casein,50
-Fruit preserve,50
-Leavening agent,50
-Marshmallow,50
-Gelatin,50
-Water,50
-Other fish product,50
-Milk (Human),50
-Other beverage,50
-Baby food,50
-Dumpling,50
-Soup,50
-Syrup,50
-Tallow,50
-Remoulade,50
-Chocolate spread,50
-Fruit gum,50
-Curry powder,50
-Other candy,50
-Meringue,50
-Lard,50
-Cocoa butter,50
-Cocoa powder,50
-Cocoa liquor,50
-Chocolate,50
-Hot chocolate,50
-Dried milk,50
-Kefir,50
-Buttermilk,50
-Other fermented milk,50
-Soy sauce,50
-Miso,50
-Tofu,50
-Zwieback,50
-Roe,50
-Cichlidae,50
-Icing,50
-Snack bar,50
-Green turtle,50
-Energy drink,50
-Burrito,50
-Hamburger,50
-Baked beans,50
-Chili,50
-Taco,50
-Tortilla,50
-Nachos,50
+ingredient,score
+angelica,50
+savoy cabbage,50
+silver linden,50
+kiwi,50
+allium,50
+garden onion,50
+leek,50
+garlic,50
+chives,50
+lemon verbena,50
+cashew nut,50
+pineapple,50
+dill,50
+custard apple,50
+wild celery,50
+peanut,50
+burdock,50
+horseradish,50
+tarragon,50
+mugwort,50
+asparagus,50
+oat,50
+star fruit,50
+brazil nut,50
+common beet,50
+borage,50
+chinese mustard,50
+swede,50
+rape,50
+common cabbage,50
+cauliflower,50
+brussel sprouts,50
+kohlrabi,50
+broccoli,50
+chinese cabbage,50
+turnip,50
+pigeon pea,50
+tea,50
+capers,50
+pepper,50
+papaya,50
+safflower,50
+caraway,50
+pecan nut,50
+chestnut,50
+roman camomile,50
+chickpea,50
+endive,50
+chicory,50
+chinese cinnamon,50
+ceylon cinnamon,50
+watermelon,50
+lime,50
+lemon,50
+pummelo,50
+"orange,50
+sweet orange,50
+coffee,50
+arabica coffee,50
+robusta coffee,50
+coriander,50
+common hazelnut,50
+saffron,50
+muskmelon,50
+cucumber,50
+cucurbita,50
+cumin,50
+turmeric,50
+quince,50
+lemon grass,50
+globe artichoke,50
+wild carrot,50
+japanese persimmon,50
+cardamom,50
+black crowberry,50
+loquat,50
+rocket salad (ssp.),50
+wax apple,50
+common buckwheat,50
+tartary buckwheat,50
+fig,50
+fennel,50
+strawberry,50
+black huckleberry,50
+soy bean,50
+sunflower,50
+sea-buckthornberry,50
+barley,50
+hyssop,50
+star anise,50
+swamp cabbage,50
+sweet potato,50
+black walnut,50
+common walnut,50
+lettuce,50
+grass pea,50
+sweet bay,50
+lentils,50
+garden cress,50
+lovage,50
+flaxseed,50
+mexican oregano,50
+lichee,50
+lupine,50
+apple,50
+mango,50
+german camomile,50
+lemon balm,50
+mentha,50
+orange mint,50
+cornmint,50
+spearmint,50
+peppermint,50
+medlar,50
+bitter gourd,50
+mulberry,50
+black mulberry,50
+nutmeg,50
+sweet basil,50
+evening primrose,50
+olive,50
+sweet marjoram,50
+pot marjoram,50
+common oregano,50
+rice,50
+millet,50
+poppy,50
+passion fruit,50
+parsnip,50
+avocado,50
+parsley,50
+scarlet bean,50
+lima bean,50
+common bean,50
+date,50
+black chokeberry,50
+anise,50
+pine nut,50
+pepper (spice),50
+pistachio,50
+common pea,50
+purslane,50
+plum,50
+apricot,50
+sweet cherry,50
+sour cherry,50
+european plum,50
+almond,50
+peach,50
+guava,50
+pomegranate,50
+pear,50
+radish,50
+garden rhubarb,50
+blackcurrant,50
+redcurrant,50
+gooseberry,50
+watercress,50
+rosemary,50
+blackberry,50
+cloudberry,50
+red raspberry,50
+black raspberry,50
+sorrel,50
+common sage,50
+black elderberry,50
+summer savory,50
+winter savory,50
+rye,50
+sesame,50
+garden tomato,50
+cherry tomato,50
+eggplant,50
+potato,50
+rowanberry,50
+sorghum,50
+spinach,50
+cloves,50
+tamarind,50
+dandelion,50
+cocoa bean,50
+common thyme,50
+linden,50
+small-leaf linden,50
+fenugreek,50
+common wheat,50
+blueberry,50
+lowbush blueberry,50
+sparkleberry,50
+highbush blueberry,50
+american cranberry,50
+bilberry,50
+lingonberry,50
+vanilla,50
+common verbena,50
+broad bean,50
+adzuki bean,50
+gram bean,50
+mung bean,50
+climbing bean,50
+cowpea,50
+muscadine grape,50
+common grape,50
+corn,50
+ginger,50
+arctic blackberry,50
+banana,50
+bayberry,50
+elliott's blueberry,50
+canada blueberry,50
+bog bilberry,50
+buffalo currant,50
+celeriac,50
+celery stalks,50
+chinese chives,50
+european cranberry,50
+deerberry,50
+ginseng,50
+cascade huckleberry,50
+oval-leaf huckleberry,50
+evergreen huckleberry,50
+red huckleberry,50
+longan,50
+macadamia nut,50
+garden onion (var.),50
+summer grape,50
+fox grape,50
+nectarine,50
+peach (var.),50
+pepper (c. baccatum),50
+pepper (c. chinense),50
+pepper (capsicum),50
+rambutan,50
+red rice,50
+annual wild rice,50
+swiss chard,50
+lemon thyme,50
+tronchuda cabbage,50
+japanese walnut,50
+welsh onion,50
+hard wheat,50
+shallot,50
+rocket salad,50
+carrot,50
+triticale,50
+black cabbage,50
+half-highbush blueberry,50
+celery leaves,50
+chicory leaves,50
+komatsuna,50
+pak choy,50
+napa cabbage,50
+chicory roots,50
+grapefruit/pummelo hybrid,50
+grapefruit,50
+jostaberry,50
+kai-lan,50
+italian oregano,50
+oxheart cabbage,50
+daikon radish,50
+black radish,50
+radish (var.),50
+red beetroot,50
+sweet rowanberry,50
+pineappple sage,50
+skunk currant,50
+beer,50
+other bread,50
+breakfast cereal,50
+other soy product,50
+other cereal product,50
+pasta,50
+biscuit,50
+sourdough,50
+spirit,50
+fortified wine,50
+other alcoholic beverage,50
+abalone,50
+abiyuch,50
+acerola,50
+acorn,50
+winter squash,50
+agar,50
+red king crab,50
+alfalfa,50
+allspice,50
+amaranth,50
+arrowhead,50
+arrowroot,50
+asian pear,50
+atlantic herring,50
+atlantic mackerel,50
+painted comber,50
+atlantic pollock,50
+atlantic wolffish,50
+bamboo shoots,50
+striped bass,50
+beech nut,50
+beluga whale,50
+bison,50
+alaska blackfish,50
+blue crab,50
+blue mussel,50
+northern bluefin tuna,50
+bluefish,50
+wild boar,50
+bowhead whale,50
+breadfruit,50
+breadnut tree seed,50
+rapini,50
+buffalo,50
+burbot,50
+giant butterbur,50
+american butterfish,50
+butternut,50
+butternut squash,50
+calabash,50
+cardoon,50
+natal plum,50
+carob,50
+common carp,50
+cassava,50
+channel catfish,50
+chayote,50
+cherimoya,50
+chervil,50
+chia,50
+chicken,50
+chinese broccoli,50
+chinese chestnut,50
+chinese water chestnut,50
+garland chrysanthemum,50
+cisco,50
+nuttall cockle,50
+coconut,50
+pacific cod,50
+atlantic cod,50
+common octopus,50
+corn salad,50
+cottonseed,50
+catjang pea,50
+malus (crab apple),50
+squashberry,50
+atlantic croaker,50
+cusk,50
+cuttlefish,50
+mule deer,50
+devilfish,50
+dock,50
+dolphin fish,50
+freshwater drum,50
+mallard duck,50
+dungeness crab,50
+durian,50
+eastern oyster,50
+freshwater eel,50
+elderberry,50
+elk,50
+emu,50
+oregon yampah,50
+european anchovy,50
+european chestnut,50
+turbot,50
+fireweed,50
+florida pompano,50
+ginkgo nuts,50
+greylag goose,50
+grape,50
+greenland halibut/turbot,50
+groundcherry,50
+grouper,50
+guinea hen,50
+haddock,50
+hippoglossus (common halibut),50
+hazelnut,50
+hickory nut,50
+horse,50
+horseradish tree,50
+alaska blueberry,50
+hyacinth bean,50
+irish moss,50
+pacific jack mackerel,50
+jackfruit,50
+japanese chestnut,50
+java plum,50
+jerusalem artichoke,50
+jujube,50
+jute,50
+kale,50
+kelp,50
+king mackerel,50
+kumquat,50
+lambsquarters,50
+leather chiton,50
+wild leek,50
+common ling,50
+lingcod,50
+american lobster,50
+loganberry,50
+lotus,50
+sacred lotus,50
+white lupine,50
+malabar spinach,50
+mammee apple,50
+purple mangosteen,50
+alpine sweetvetch,50
+milkfish,50
+monkfish,50
+moth bean,50
+mountain yam,50
+striped mullet,50
+white mustard,50
+mustard spinach,50
+new zealand spinach,50
+nopal,50
+ocean pout,50
+north pacific giant octopus,50
+ohelo berry,50
+okra,50
+tunicate,50
+ostrich,50
+spotted seal,50
+pacific herring,50
+pacific oyster,50
+pacific rockfish,50
+velvet duck,50
+pepper (c. frutescens),50
+common persimmon,50
+pheasant,50
+northern pike,50
+pili nut,50
+colorado pinyon,50
+pitanga,50
+plains prickly pear,50
+french plantain,50
+american pokeweed,50
+opium poppy,50
+prairie turnip,50
+prickly pear,50
+quinoa,50
+european rabbit,50
+rainbow smelt,50
+rainbow trout,50
+malabar plum,50
+rose hip,50
+roselle,50
+orange roughy,50
+sablefish,50
+pink salmon,50
+chum salmon,50
+coho salmon,50
+sockeye salmon,50
+chinook salmon,50
+atlantic salmon,50
+salmonberry,50
+common salsify,50
+sapodilla,50
+mamey sapote,50
+spanish mackerel,50
+pacific sardine,50
+scallop,50
+scup,50
+sea cucumber,50
+steller sea lion,50
+bearded seal,50
+ringed seal,50
+sea trout,50
+sesbania flower,50
+american shad,50
+shark,50
+sheefish,50
+lamb,50
+sheepshead,50
+hedge mustard,50
+skipjack tuna,50
+snapper,50
+soursop,50
+spelt,50
+spirulina,50
+squab,50
+strawberry guava,50
+greater sturgeon,50
+white sucker,50
+sugar apple,50
+pumpkinseed sunfish,50
+swordfish,50
+taro,50
+teff,50
+tilefish,50
+mexican groundcherry,50
+towel gourd,50
+salmon,50
+turkey,50
+beef,50
+walleye,50
+alaska pollock,50
+wasabi,50
+wax gourd,50
+whelk,50
+coalfish pollock,50
+broad whitefish,50
+whitefish,50
+whiting,50
+wild rice,50
+tea leaf willow,50
+winged bean,50
+yam,50
+jicama,50
+yautia,50
+yellowfin tuna,50
+yellowtail amberjack,50
+pollock,50
+albacore tuna,50
+gadus,50
+atlantic halibut,50
+pacific halibut,50
+pacific salmon,50
+smelt,50
+herring,50
+spiny lobster,50
+snow crab,50
+black-eyed pea,50
+deer,50
+bass,50
+perciformes,50
+rabbit,50
+domestic goat,50
+beefalo,50
+clam,50
+squid,50
+shrimp,50
+crayfish,50
+flatfish,50
+domestic pig,50
+walrus,50
+alaska wild rhubarb,50
+oriental wheat,50
+yardlong bean,50
+quail,50
+boysenberry,50
+persian lime,50
+feijoa,50
+rowal,50
+jew's ear,50
+common mushroom,50
+shiitake,50
+purple laver,50
+wakame,50
+enokitake,50
+epazote,50
+oyster mushroom,50
+cloud ear fungus,50
+maitake,50
+ostrich fern,50
+spot croaker,50
+sourdock,50
+tinda,50
+atlantic menhaden,50
+wheat,50
+common chokecherry,50
+agave,50
+narrowleaf cattail,50
+jellyfish,50
+anchovy,50
+blue whiting,50
+carp bream,50
+chanterelle,50
+sturgeon,50
+charr,50
+cinnamon,50
+crab,50
+common dab,50
+spiny dogfish,50
+anatidae,50
+anguilliformes,50
+true frog,50
+garfish,50
+gadiformes,50
+mountain hare,50
+lake trout,50
+lemon sole,50
+clawed lobster,50
+lumpsucker,50
+tuna,50
+marine mussel,50
+norway haddock,50
+norway lobster,50
+norway pout,50
+oil palm,50
+true oyster,50
+sago palm,50
+persimmon,50
+pikeperch,50
+dab,50
+rock ptarmigan,50
+pacific ocean perch,50
+black salsify,50
+true seal,50
+red algae,50
+kombu,50
+snail,50
+true sole,50
+catfish,50
+thistle,50
+thunnus,50
+walnut,50
+whale,50
+dove,50
+conch,50
+grape wine,50
+berry wine,50
+other wine,50
+apple cider,50
+liquor,50
 cheese,50
-Salad,50
-Cream substitute,50
-Dulce de leche,50
-Topping,50
-Sweet custard,50
-Egg roll,50
-Heart of palm,50
-Popcorn,50
-Potato chip,50
-Tortilla chip,50
-Corn chip,50
-Hibiscus tea,50
-Stew,50
-Gelatin dessert,50
-Junket,50
-Falafel,50
-Frybread,50
-Other frozen dessert,50
-Lasagna,50
-Morchella,50
-Pancake,50
-Pectin,50
-Pudding,50
-Waffle,50
-Soy milk,50
-Meatloaf,50
-Sake,50
-Cocktail,50
-Couscous,50
-Bulgur,50
-Coffee substitute,50
-Coffee mocha,50
-Chimichanga,50
-Semolina,50
-Tapioca pearl,50
-Tostada,50
-Quesadilla,50
-Baked potato,50
-Hot dog,50
-Spread,50
-Enchilada,50
-Egg substitute,50
-Nutritional drink,50
-Other sandwich,50
-Ketchup,50
-Breakfast sandwich,50
-Adobo,50
-Macaroni and cheese,50
-Butterfat,50
-Horned melon,50
-Hushpuppy,50
-Fruit juice,50
-Relish,50
-Other fruit product,50
-Fruit salad,50
-Soy yogurt,50
-Vegetarian food,50
-Veggie burger,50
-Cold cut,50
-Mixed nuts,50
-Canola,50
-Babassu palm,50
-Cupuaçu,50
-Shea tree,50
-Oil-seed Camellia,50
-Ucuhuba,50
-Phyllo dough,50
-Cooking oil,50
-Pie crust,50
-Pie filling,50
-Pie,50
-Shortening,50
-Soy cream,50
-Ice cream cone,50
-Molasses,50
-Cracker,50
-Nance,50
-Naranjilla,50
-Natto,50
-Ravioli,50
-Scrapple,50
-Other pasta dish,50
-Succotash,50
-Tamale,50
-Rice cake,50
-Tree fern,50
-Evaporated milk,50
-Flour,50
-Akutaq,50
-Dough,50
-Pita bread,50
-Focaccia,50
-Bagel,50
-Other bread product,50
-Piki bread,50
-French toast,50
-Wheat bread,50
-Rye bread,50
-Oat bread,50
-Potato bread,50
-Cornbread,50
-Corn grits,50
-Multigrain bread,50
-Rice bread,50
-Pan dulce,50
-Raisin bread,50
-Wonton wrapper,50
-Trail mix,50
-Greenthread tea,50
-Fruit-flavor drink,50
-Vegetable juice,50
-Horchata,50
-Soft drink,50
-Frozen yogurt,50
-Milkshake,50
-Chocolate mousse,50
-Dripping,50
-Pupusa,50
-Empanada,50
-Arepa,50
-Ascidians,50
-Gefilte fish,50
-Yellow pond-lily,50
-Fish burger,50
-Other dish,50
-Pot pie,50
-Stuffing,50
-Edible shell,50
-Fudge,50
-Candy bar,50
-Condensed milk,50
-Margarine,50
-Margarine-like spread,50
-Hummus,50
-Potato puffs,50
-Potato gratin,50
-Milk substitute,50
-Soft-necked garlic,50
-Cabbage,50
-Chinese bayberry,50
-Mushrooms,50
-Alcoholic beverages,50
-Onion-family vegetables,50
-Pomes,50
-Brassicas,50
-Cereals and cereal products,50
-Citrus,50
-Cocoa and cocoa products,50
-Coffee and coffee products,50
-Crustaceans,50
-Fats and oils,50
-Fishes,50
-Herbs and Spices,50
-Pulses,50
-Mollusks,50
-Nuts,50
-Beverages,50
-Fruits,50
-Green vegetables,50
-Root vegetables,50
-Sunburst squash,50
-Green zucchini,50
-Yellow zucchini,50
-Green bell pepper,50
-Yellow bell pepper,50
-Orange bell pepper,50
-Red bell pepper,50
-Italian sweet red pepper,50
-Yellow wax bean,50
-Green bean,50
-Saskatoon berry,50
-Nanking cherry,50
-Japanese pumpkin,50
-White cabbage,50
-Romaine lettuce,50
-Cow milk,50
-Castanospermum australe,50
-Gentiana lutea,50
-Juniperus communis,50
-Albizia gummifera,50
-Mundu,50
-Rabbiteye blueberry,50
-Yali pear,50
-Asparagus racemosus,50
-Evergreen blackberry,50
-Asparagus fern,50
-Thornless blackberry,50
-Tropical highland blackberry,50
-Andean blackberry,50
-Black tea,50
-Green tea,50
-Olive oil,50
-Macroalgae,50
-Red wine,50
+milk,50
+egg,50
+yogurt,50
+bean,50
+vodka,50
+whisky,50
+ice cream,50
+gin,50
+honey,50
+liquorice,50
+vinegar,50
+rum,50
+port wine,50
+vermouth,50
+sherry,50
+madeira wine,50
+nougat,50
+toffee,50
+cake,50
+pizza,50
+ymer,50
+other snack food,50
+crisp bread,50
+pastry,50
+dragée,50
+chewing gum,50
+marzipan,50
+salad dressing,50
+sauce,50
+salt,50
+butter,50
+butter substitute,50
+cream,50
+sugar,50
+sausage,50
+meatball,50
+mustard,50
+pate,50
+sugar substitute,50
+meat bouillon,50
+whey,50
+casein,50
+fruit preserve,50
+leavening agent,50
+marshmallow,50
+gelatin,50
+water,50
+other fish product,50
+milk (human),50
+other beverage,50
+baby food,50
+dumpling,50
+soup,50
+syrup,50
+tallow,50
+remoulade,50
+chocolate spread,50
+fruit gum,50
+curry powder,50
+other candy,50
+meringue,50
+lard,50
+cocoa butter,50
+cocoa powder,50
+cocoa liquor,50
+chocolate,50
+hot chocolate,50
+dried milk,50
+kefir,50
+buttermilk,50
+other fermented milk,50
+soy sauce,50
+miso,50
+tofu,50
+zwieback,50
+roe,50
+cichlidae,50
+icing,50
+snack bar,50
+green turtle,50
+energy drink,50
+burrito,50
+hamburger,50
+baked beans,50
+chili,50
+taco,50
+tortilla,50
+nachos,50
+salad,50
+cream substitute,50
+dulce de leche,50
+topping,50
+sweet custard,50
+egg roll,50
+heart of palm,50
+popcorn,50
+potato chip,50
+tortilla chip,50
+corn chip,50
+hibiscus tea,50
+stew,50
+gelatin dessert,50
+junket,50
+falafel,50
+frybread,50
+other frozen dessert,50
+lasagna,50
+morchella,50
+pancake,50
+pectin,50
+pudding,50
+waffle,50
+soy milk,50
+meatloaf,50
+sake,50
+cocktail,50
+couscous,50
+bulgur,50
+coffee substitute,50
+coffee mocha,50
+chimichanga,50
+semolina,50
+tapioca pearl,50
+tostada,50
+quesadilla,50
+baked potato,50
+hot dog,50
+spread,50
+enchilada,50
+egg substitute,50
+nutritional drink,50
+other sandwich,50
+ketchup,50
+breakfast sandwich,50
+adobo,50
+macaroni and cheese,50
+butterfat,50
+horned melon,50
+hushpuppy,50
+fruit juice,50
+relish,50
+other fruit product,50
+fruit salad,50
+soy yogurt,50
+vegetarian food,50
+veggie burger,50
+cold cut,50
+mixed nuts,50
+canola,50
+babassu palm,50
+cupuaçu,50
+shea tree,50
+oil-seed camellia,50
+ucuhuba,50
+phyllo dough,50
+cooking oil,50
+pie crust,50
+pie filling,50
+pie,50
+shortening,50
+soy cream,50
+ice cream cone,50
+molasses,50
+cracker,50
+nance,50
+naranjilla,50
+natto,50
+ravioli,50
+scrapple,50
+other pasta dish,50
+succotash,50
+tamale,50
+rice cake,50
+tree fern,50
+evaporated milk,50
+flour,50
+akutaq,50
+dough,50
+pita bread,50
+focaccia,50
+bagel,50
+other bread product,50
+piki bread,50
+french toast,50
+wheat bread,50
+rye bread,50
+oat bread,50
+potato bread,50
+cornbread,50
+corn grits,50
+multigrain bread,50
+rice bread,50
+pan dulce,50
+raisin bread,50
+wonton wrapper,50
+trail mix,50
+greenthread tea,50
+fruit-flavor drink,50
+vegetable juice,50
+horchata,50
+soft drink,50
+frozen yogurt,50
+milkshake,50
+chocolate mousse,50
+dripping,50
+pupusa,50
+empanada,50
+arepa,50
+ascidians,50
+gefilte fish,50
+yellow pond-lily,50
+fish burger,50
+other dish,50
+pot pie,50
+stuffing,50
+edible shell,50
+fudge,50
+candy bar,50
+condensed milk,50
+margarine,50
+margarine-like spread,50
+hummus,50
+potato puffs,50
+potato gratin,50
+milk substitute,50
+soft-necked garlic,50
+cabbage,50
+chinese bayberry,50
+mushrooms,50
+alcoholic beverages,50
+onion-family vegetables,50
+pomes,50
+brassicas,50
+cereals and cereal products,50
+citrus,50
+cocoa and cocoa products,50
+coffee and coffee products,50
+crustaceans,50
+fats and oils,50
+fishes,50
+herbs and spices,50
+pulses,50
+mollusks,50
+nuts,50
+beverages,50
+fruits,50
+green vegetables,50
+root vegetables,50
+sunburst squash,50
+green zucchini,50
+yellow zucchini,50
+green bell pepper,50
+yellow bell pepper,50
+orange bell pepper,50
+red bell pepper,50
+italian sweet red pepper,50
+yellow wax bean,50
+green bean,50
+saskatoon berry,50
+nanking cherry,50
+japanese pumpkin,50
+white cabbage,50
+romaine lettuce,50
+cow milk,50
+castanospermum australe,50
+gentiana lutea,50
+juniperus communis,50
+albizia gummifera,50
+mundu,50
+rabbiteye blueberry,50
+yali pear,50
+asparagus racemosus,50
+evergreen blackberry,50
+asparagus fern,50
+thornless blackberry,50
+tropical highland blackberry,50
+andean blackberry,50
+black tea,50
+green tea,50
+olive oil,50
+macroalgae,50
+red wine,50
 linseed oil,50
-Rapeseed oil,50
-Soybean oil,50
-Guarana,50
-Mate,50
-White wine,50
-Sour orange,50
-Egg yolk,50
-Rosé wine,50
-White mulberry,50
-Canola oil,50
-Dessert wine,50
-Red champagne,50
-Red tea,50
-White champagne,50
-Red grape juice,50
-White grape juice,50
-Crosne,50
-Red clover,50
-Partridge berry,50
-Mikan,50
-Mozzarella cheese,50
-Plain cream cheese,50
-Cheddar Cheese,50
-Parmesan cheese,50
-Almond milk,50
-Coconut milk,50
-Salted butter,50
-Sunflower oil,50
-Coconut oil,50
-Peanut oil,50
-Cottonseed oil,50
-Corn oil,50
-Avocado oil,50
-Grapeseed oil,50
-Sesame oil,50
-Monterey Jack cheese,50
-Swiss cheese,50
-Cottage cheese,50
-Blue cheese,50
-Sour cream,50
-Whole wheat bread,50
-Jalapeno pepper,50
-Greek feta cheese,50
-Eddoe,50
-Plantain,50
-Clementine,50
-Green apple,50
-White onion,50
-Red onion,50
-Green onion,50
-Green grape,50
-Red grape,50
-Black plum,50
-Green cabbage,50
-Black raisin,50
-Cannellini bean,50
-Green lentil,50
-Cubanelle pepper,50
-Acorn squash,50
-Iceberg lettuce,50
-Japanese sea bass,50
-Pea shoots,50
-Yau choy,50
-Water spinach,50
-Chineese plum,50
-Green plum,50
-Wampee,50
-Pitaya,50
-Goji,50
-Monk fruit,50
-Cantaloupe melon,50
-Hawthorn,50
-Lantern fruit,50
-White bread,50
-Cape gooseberry,50
-Herbal tea,50
-Fish oil,50
-Taco shell,50
-Tostada shell,50
+rapeseed oil,50
+soybean oil,50
+guarana,50
+mate,50
+white wine,50
+sour orange,50
+egg yolk,50
+rosé wine,50
+white mulberry,50
+canola oil,50
+dessert wine,50
+red champagne,50
+red tea,50
+white champagne,50
+red grape juice,50
+white grape juice,50
+crosne,50
+red clover,50
+partridge berry,50
+mikan,50
+mozzarella cheese,50
+plain cream cheese,50
+cheddar cheese,50
+parmesan cheese,50
+almond milk,50
+coconut milk,50
+salted butter,50
+sunflower oil,50
+coconut oil,50
+peanut oil,50
+cottonseed oil,50
+corn oil,50
+avocado oil,50
+grapeseed oil,50
+sesame oil,50
+monterey jack cheese,50
+swiss cheese,50
+cottage cheese,50
+blue cheese,50
+sour cream,50
+whole wheat bread,50
+jalapeno pepper,50
+greek feta cheese,50
+eddoe,50
+plantain,50
+clementine,50
+green apple,50
+white onion,50
+red onion,50
+green onion,50
+green grape,50
+red grape,50
+black plum,50
+green cabbage,50
+black raisin,50
+cannellini bean,50
+green lentil,50
+cubanelle pepper,50
+acorn squash,50
+iceberg lettuce,50
+japanese sea bass,50
+pea shoots,50
+yau choy,50
+water spinach,50
+chineese plum,50
+green plum,50
+wampee,50
+pitaya,50
+goji,50
+monk fruit,50
+cantaloupe melon,50
+hawthorn,50
+lantern fruit,50
+white bread,50
+cape gooseberry,50
+herbal tea,50
+fish oil,50
+taco shell,50
+tostada shell,50

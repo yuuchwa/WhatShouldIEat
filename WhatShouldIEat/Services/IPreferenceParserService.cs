@@ -6,8 +6,8 @@ namespace WhatShouldIEat.Services
 {
     interface IPreferenceParserService
     {
-        public Dictionary<string, string> GetUserPreference();
+        public Dictionary<string, int> GetUserPreference();
 
-        public void safeScores(List<string> preference);
+        public void SetUserPreferences(Dictionary<string, int> preferences);
     }
 }

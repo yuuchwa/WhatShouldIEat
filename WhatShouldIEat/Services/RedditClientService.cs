@@ -130,10 +130,17 @@ namespace WhatShouldIEat.Services
             if (index >= 0)
             {
                 instruction = comment.Body.Substring(index);
-                while (instruction[0] != '\n' && instruction[1] != '\n')
+                try
                 {
-                    instruction = instruction.Substring(1);
-                    // entferne überschüssigen Code.
+                    while (instruction[0] != '\n' && instruction[1] != '\n')
+                    {
+                        instruction = instruction.Substring(1);
+                        // entferne überschüssigen Code.
+                    }
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    return null;
                 }
             }
             return instruction;

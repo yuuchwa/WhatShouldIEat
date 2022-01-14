@@ -98,10 +98,35 @@ namespace WhatShouldIEat.Services
             return false;
         }
 
-        public void WaitForFeedback()
+        public int WaitForFeedback()
         {
-            Console.WriteLine("\nFalls du eine Bewertung abgeben möchtest, kannst du auf Enter klicken, um eine Rückmeldung abzugeben.");
-            Console.ReadKey();
+            Console.WriteLine("\nHat dir das Rezept geschmeckt?");
+            Console.WriteLine("1) ja, das Rezept war super lecker!");
+            Console.WriteLine("2) Es hat geschmeckt!");
+            Console.WriteLine("3) Es reichte, um mich zu sättigen.");
+            Console.WriteLine("4) ich hatte schonmal besseres gegessen.");
+            Console.WriteLine("5) Es schmeckte mir ganz und gar nicht.");
+
+            int option = 0;
+            while (true)
+            {
+                if (int.TryParse(Console.ReadLine(), out option))
+                {
+                    if (1 <= option && option <= 5)
+                    {
+                        return option;
+                    }
+                    else
+                    {
+                        option = 0;
+                        Console.WriteLine("Das ist keine gültige Eingabe. Versuche es nochmal.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Das ist keine gültige Eingabe. Versuche es nochmal.");
+                }
+            }
         }
 
         public void PrintRecipe(Recipe recipe)
